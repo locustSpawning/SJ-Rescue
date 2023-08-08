@@ -1,3 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --clr-deep-purple: #26070e;
+    --clr-paper: #f3f3f3;
+    --clr-golden-rod: #c98228;
+    --clr-daffodil: #f5d97f;
+    --clr-blue-jay: #3972b6;
+    --clr-sky: #c0dff1;
+    --clr-slate: #91b0a9;
+    --clr-stone: #c7cec5;
+    --clr-berry: #74365f;
+    --clr-mountain-pink: #d889b4;
+
+    --ff-body: 'Montserrat', sans-serif;
+    --ff-accent: 'Chewy', cursive;
+
+    --font-weight-regular: 400;
+    --font-weight-semi-bold: 500;
+    --font-weight-bold: 700;
+
+    --fs-400: 1.3rem;
+    --fs-500: 1.875rem;
+    --fs-600: 2.5rem;
+}
+
+/* Utility Classes */
+
+.text-main-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-regular);
+}
+
+.text-main-bold-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-highlight-bold-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-main-title-500-reg {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-regular);
+}
+
+.text-main-title-500-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-question-500-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-accent-500-bold {
+    font-family: var(--ff-accent);
+    color: var(--clr-berry);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-paper-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-paper);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-regular);
+}
+
+.text-paper-400-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-paper);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-paper-600-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-paper);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-slate-400-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-slate);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-slate-600-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-slate);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-bold);
+}
+
 /* https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
@@ -8,17 +120,11 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+* {
     margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    /* font: inherit; */
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -81,6 +187,25 @@ select {
     }
 }
 
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+
+/* ✨ START HERE ✨ */
+
+html,
+body {
+    height: 100%;
+    background-color: var(--clr-paper);
+}
+
+li {
+    cursor: pointer;
+}
+
 /* HEADER */
 
 #header-logo,
@@ -93,15 +218,73 @@ select {
 header {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
 #header-section-1,
-#header-list {
+#header-list,
+#header-section-1-left {
     display: flex;
+    align-items: center;
+}
+#header-section-1 {
+    background-color: var(--clr-stone);
+    border: 2px solid;
+    border-color: var(--clr-paper);
+}
+
+#header-content-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 4rem 0;
     align-items: center;
 }
 
 #text-logo-grid {
     display: grid;
+    padding-left: 0.5rem;
 }
+
+#header-section-2 {
+    background-color: var(--clr-slate);
+}
+
+#header-list {
+    justify-content: space-between;
+    height: 3.5rem;
+    margin: 0 4rem 0;
+}
+
+.header-link {
+    position: relative;
+}
+
+.header-link:active,
+.header-link:focus {
+    /* < ------ not sure why focus isn't working*/
+    font-weight: var(--font-weight-semi-bold);
+    color: var(--clr-berry);
+}
+
+.header-link::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: var(--clr-berry);
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    opacity: 0;
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+.header-link:hover::after {
+    opacity: 1;
+}
+
+.header-link:focus::after {
+    opacity: 1;
+}
+
+/* FOOTER */
