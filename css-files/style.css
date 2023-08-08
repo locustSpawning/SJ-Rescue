@@ -149,6 +149,8 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow: auto;
+    background-image: url('../images/paper.jpg');
 }
 
 /* A elements that don't have a class get default styles */
@@ -199,7 +201,6 @@ a:visited {
 html,
 body {
     height: 100%;
-    background-color: var(--clr-paper);
 }
 
 li {
