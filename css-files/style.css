@@ -148,9 +148,10 @@ html:focus-within {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     overflow: auto;
     background-image: url('../images/paper.jpg');
+    overflow: auto;
 }
 
 /* A elements that don't have a class get default styles */
@@ -207,6 +208,30 @@ li {
     cursor: pointer;
 }
 
+/* BUTTONS GENERAL*/
+
+button {
+    color: var(--clr-paper);
+    background-color: var(--clr-berry);
+    border: 2px solid;
+    border-color: var(--clr-mountain-pink);
+    border-radius: 7px;
+    padding: 0.5rem;
+    min-width: 175px;
+    min-height: 60px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin-top: 0.5rem;
+}
+
+button:hover {
+    background-color: var(--clr-mountain-pink);
+}
+
+button:active {
+    transform: scale(1.03);
+}
+
 /* HEADER */
 
 #header-logo,
@@ -249,6 +274,7 @@ header {
 
 #header-section-2 {
     background-color: var(--clr-slate);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 #header-list,
@@ -333,4 +359,22 @@ footer {
 
 .footer-link:hover {
     color: var(--clr-paper);
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--clr-paper);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--clr-sky);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--clr-paper);
 }
