@@ -335,10 +335,3 @@
     text-decoration: underline;
     text-underline-offset: 6px;
 }
-
-#pets-video,
-#fun-things {
-    color: var(--clr-mountain-pink);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}

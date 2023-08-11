@@ -1,0 +1,57 @@
+/* FORMS PAGE */
+
+#all-forms-title {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#adopt-section,
+#foster-section,
+#volunteer-section,
+#sponsor-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding: 3em 0 3em;
+}
+
+.looking-to {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#adopt-image,
+#foster-image,
+#volunteer-image,
+#sponsor-image {
+    height: 10em;
+    width: auto;
+    padding-left: 10em;
+}
+
+#all-forms {
+    padding: 3em 0 6em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#view-animals-here {
+    background-image: radial-gradient(
+        circle 1500px,
+        var(--clr-berry),
+        var(--clr-deep-purple)
+    );
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8em 0 12em;
+    box-shadow: var(--larger-shadow);
+}
+
+#view-animals-text {
+    text-align: center;
+}

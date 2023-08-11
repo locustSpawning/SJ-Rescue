@@ -43,10 +43,10 @@
     font-weight: var(--font-weight-bold);
 }
 
-.text-highlight-bold-400 {
+.text-highlight-bold-500 {
     font-family: var(--ff-body);
     color: var(--clr-berry);
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
     font-weight: var(--font-weight-bold);
 }
 
@@ -92,11 +92,20 @@
     font-weight: var(--font-weight-bold);
 }
 
-.text-paper-600-bold {
+.text-paper-600-reg {
     font-family: var(--ff-body);
     color: var(--clr-paper);
     font-size: var(--fs-600);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-regular);
+}
+
+.text-paper-600-chewy {
+    font-family: var(--ff-accent);
+    color: var(--clr-paper);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-regular);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .text-slate-400-bold {
@@ -117,6 +126,22 @@
     font-family: var(--ff-body);
     color: var(--clr-deep-purple);
     font-size: var(--fs-600);
+    font-weight: var(--font-weight-bold);
+}
+
+.text-main-title-600-semi-bold {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-semi-boldold);
+    /* text-decoration: underline;
+    text-underline-offset: 5px; */
+}
+
+.text-link {
+    color: var(--clr-mountain-pink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
     font-weight: var(--font-weight-bold);
 }
 
