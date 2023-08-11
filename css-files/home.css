@@ -41,6 +41,11 @@
     box-shadow: var(--smaller-shadow);
 }
 
+#events-title {
+    text-align: center;
+    padding-top: 10rem;
+}
+
 /* CALENDAR */
 
 .container {
@@ -48,7 +53,7 @@
     height: max-content;
     position: relative;
     display: flex;
-    padding: 2% 0px 0px 0px;
+    padding: 2% 0px 150px;
     justify-content: center;
     top: 10%;
     right: 0%;
@@ -314,4 +319,26 @@
     .month-list > div {
         margin: 5px 0px;
     }
+}
+
+/* NEWS */
+
+#news {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding-bottom: 15rem;
+}
+
+#latest-news-title {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+#pets-video,
+#fun-things {
+    color: var(--clr-mountain-pink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
