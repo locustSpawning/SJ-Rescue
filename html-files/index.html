@@ -19,6 +19,7 @@
                                 id="header-logo"
                                 src="../images/paw-print.png"
                                 alt="SJ Rescue"
+                                href="index.html"
                         /></a>
                         <div id="text-logo-grid">
                             <h2 class="text-main-title-500-bold">
@@ -37,10 +38,32 @@
             </div>
             <div id="header-section-2">
                 <ul id="header-list" class="text-main-400">
-                    <li><a class="header-link">Home</a></li>
-                    <li><a class="header-link">Adoption | Foster Forms</a></li>
-                    <li><a class="header-link">Animals</a></li>
-                    <li><a class="header-link">Contact</a></li>
+                    <li>
+                        <a
+                            class="header-link current-page text-main-400"
+                            href="#"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="adoption-forms.html"
+                            >Adoption | Foster Forms</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="animals-available.html"
+                            >Animals</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header-link text-main-400" href="contact.html"
+                            >Contact</a
+                        >
+                    </li>
                 </ul>
             </div>
         </header>
@@ -50,13 +73,23 @@
                 <div id="left-text-buttons">
                     <div id="donate-home-page">
                         <p class="text-accent-500-bold">Make a difference!</p>
-                        <button id="donate-button" class="text-paper-400-bold">
+                        <button
+                            id="donate-button"
+                            class="text-paper-400-bold"
+                            onclick="window.location.href='donate.html'"
+                            ,
+                        >
                             Donate
                         </button>
                     </div>
                     <div id="adopt-home-page">
                         <p class="text-accent-500-bold">Looking to adopt?</p>
-                        <button id="adopt-button" class="text-paper-400-bold">
+                        <button
+                            id="adopt-button"
+                            class="text-paper-400-bold"
+                            onclick="window.location.href='animals-available.html'"
+                            ,
+                        >
                             See who needs <br />
                             a home
                         </button>
@@ -146,18 +179,44 @@
 
         <footer>
             <ul id="footer-list" class="text-slate-400-bold">
-                <li><a class="footer-link">Home</a></li>
-                <li><a class="footer-link">Adoption | Foster Forms</a></li>
-                <li><a class="footer-link">Animals</a></li>
-                <li><a class="footer-link">Contact</a></li>
+                <li>
+                    <a class="footer-link text-slate-400-bold" href="#">Home</a>
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="adoption-forms.html"
+                        >Adoption | Foster Forms</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="animals-available.html"
+                        >Animals</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="contact.html"
+                        >Contact</a
+                    >
+                </li>
             </ul>
             <div id="stay-connected-footer">
-                <p class="text-slate-400-bold">Stay Connected!</p>
+                <p class="text-slate-400-bold" id="stay-connected-text">
+                    Stay Connected!
+                </p>
                 <div id="footer-facebook-insta-links">
                     <a
+                        href="https://www.facebook.com/southjerseyrescue/"
+                        target="_blank"
                         ><img class="footer-image" src="../images/facebook.png"
                     /></a>
                     <a
+                        href="https://www.instagram.com/south_jersey_rescue/"
+                        target="_blank"
                         ><img
                             class="footer-image"
                             src="../images/instagram (2).png"

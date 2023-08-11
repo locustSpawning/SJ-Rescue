@@ -244,6 +244,11 @@ button:active {
 
 /* HEADER */
 
+.current-page {
+    color: var(--clr-berry);
+    font-weight: var(--font-weight-bold);
+}
+
 #header-logo,
 #header-profile {
     height: 3rem;
@@ -350,6 +355,10 @@ footer {
     align-self: center;
     justify-content: center;
     align-items: center;
+}
+
+#stay-connected-text {
+    padding: 0.5rem;
 }
 
 #footer-facebook-insta-links {
