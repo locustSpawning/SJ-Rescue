@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="../js-files/main.js"></script>
+        <script defer src="../js-files/animals-available.js"></script>
         <link rel="stylesheet" href="../css-files/style.css" />
         <link rel="stylesheet" href="../css-files/animals-available.css" />
         <link rel="icon" href="../images/paw-print.png" type="icon" />
@@ -65,6 +66,46 @@
                 </ul>
             </div>
         </header>
+
+        <section id="search-filter">
+            <p>See who needs a home!</p>
+        </section>
+
+        <section id="animal-grid"></section>
+
+        <section id="pagination-section">
+            <div class="pagination">
+                <button class="btn1 text-slate-400-bold" onclick="backBtn()">
+                    <img src="../images/next.png" />prev
+                </button>
+                <ul>
+                    <li
+                        class="link text-main-400 active"
+                        value="1"
+                        onclick="activeLink()"
+                    >
+                        1
+                    </li>
+                    <li
+                        class="link text-main-400"
+                        value="2"
+                        onclick="activeLink()"
+                    >
+                        2
+                    </li>
+                    <li
+                        class="link text-main-400"
+                        value="3"
+                        onclick="activeLink()"
+                    >
+                        3
+                    </li>
+                </ul>
+                <button class="btn2 text-slate-400-bold" onclick="nextBtn()">
+                    next <img src="../images/next.png" />
+                </button>
+            </div>
+        </section>
 
         <footer>
             <ul id="footer-list" class="text-slate-400-bold">

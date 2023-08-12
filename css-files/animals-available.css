@@ -1,0 +1,71 @@
+/* ANIMALS PAGE */
+
+#pagination-section {
+    display: flex;
+    justify-content: center;
+}
+.pagination {
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+ul {
+    margin: 20px 30px;
+}
+
+.link {
+    display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    border-radius: 50%;
+}
+
+.link.active {
+    color: var(--clr-paper);
+    font-weight: 800;
+    background-image: linear-gradient(
+        var(--clr-deep-purple),
+        var(--clr-deep-purple)
+    );
+    background-repeat: no-repeat;
+}
+
+.btn1,
+.btn2 {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--clr-slate);
+    border-color: none;
+    border-radius: 7px;
+    padding: 0.5rem;
+    min-width: 60px;
+    min-height: 60px;
+    box-shadow: none;
+    transition: transform 0.3s;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover {
+    background-color: transparent;
+}
+
+.btn1 img {
+    width: 40px;
+    margin-right: 10px;
+    transform: scaleX(-1);
+}
+
+.btn2 img {
+    width: 40px;
+    margin-left: 10px;
+}
