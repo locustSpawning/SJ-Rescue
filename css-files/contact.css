@@ -1,0 +1,36 @@
+/* CONTACT PAGE */
+
+#main-content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-content: center;
+    gap: 6em;
+    padding: 6em 0 6em;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.social-media-images {
+    height: 7em;
+    width: 7em;
+    margin-top: 2em;
+}
+
+#social-media-links-stay-connected {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#sleepy-cat {
+    height: 10em;
+    width: auto;
+    align-self: center;
+}
