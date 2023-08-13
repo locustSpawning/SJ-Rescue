@@ -2,7 +2,7 @@
 
 #all-forms-title {
     text-align: center;
-    padding-bottom: 2em;
+    padding: 1em 0 1em;
 }
 
 #adopt-section,
@@ -13,7 +13,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
-    padding: 3em 0 3em;
 }
 
 .looking-to {
@@ -26,16 +25,16 @@
 #foster-image,
 #volunteer-image,
 #sponsor-image {
-    height: 10em;
-    width: auto;
     padding-left: 10em;
 }
 
-#all-forms {
-    padding: 3em 0 6em;
-    display: grid;
+#all-forms-table {
+    display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
+    border-spacing: 5px 5rem;
+    padding-left: 5em;
 }
 
 #view-animals-here {
