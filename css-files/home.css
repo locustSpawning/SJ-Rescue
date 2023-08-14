@@ -13,6 +13,10 @@
     gap: 10rem;
 }
 
+#left-text-buttons {
+    text-align: center;
+}
+
 #donate-home-page {
     display: flex;
     flex-direction: column;
@@ -24,6 +28,7 @@
 
 #adopt-button {
     width: 220px;
+    height: 80px;
 }
 
 #girl-cat-picture {

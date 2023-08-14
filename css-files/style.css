@@ -71,9 +71,17 @@
     font-weight: var(--font-weight-bold);
 }
 
+.text-search-500-semi {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-semi-bold);
+}
+
 .text-accent-500-bold {
     font-family: var(--ff-accent);
-    color: var(--clr-berry);
+    letter-spacing: 0.1rem;
+    color: var(--clr-deep-purple);
     font-size: var(--fs-500);
     font-weight: var(--font-weight-bold);
 }
@@ -248,12 +256,12 @@ li {
 button {
     color: var(--clr-paper);
     background-color: var(--clr-berry);
-    border: 2px solid;
-    border-color: var(--clr-mountain-pink);
+    border: 3px solid;
+    border-color: var(--clr-berry);
     border-radius: 7px;
     padding: 0.5rem;
-    min-width: 175px;
-    min-height: 60px;
+    width: 175px;
+    height: 60px;
     box-shadow: var(--larger-shadow);
     transition: transform 0.3s;
     margin-top: 0.5rem;
@@ -261,6 +269,7 @@ button {
 
 button:hover {
     background-color: var(--clr-mountain-pink);
+    border-color: var(--clr-paper);
 }
 
 button:active {
@@ -284,6 +293,20 @@ button:active {
 header {
     display: flex;
     flex-direction: column;
+}
+
+#donate-button-header {
+    width: 110px;
+    height: 45px;
+    margin: 0;
+    box-shadow: none;
+    text-align: center;
+    background-color: var(--clr-deep-purple);
+    border-color: var(--clr-berry);
+}
+
+#donate-button-header:hover {
+    background-color: var(--clr-berry);
 }
 
 #header-section-1,

@@ -54,3 +54,7 @@
 #view-animals-text {
     text-align: center;
 }
+
+.text-link {
+    cursor: pointer;
+}
