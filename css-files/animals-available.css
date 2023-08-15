@@ -64,6 +64,19 @@
     place-items: center;
 }
 
+.grid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 1em 0 3em;
+}
+
+.animal-name {
+    padding-top: 0.7em;
+}
+
 .animal-block {
     width: 20em;
     height: 20em;
@@ -77,6 +90,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 3px solid var(--clr-deep-purple);
+    border-radius: 3px;
+    box-shadow: var(--larger-shadow);
 }
 
 /* PAGINATION */
