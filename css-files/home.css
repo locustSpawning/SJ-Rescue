@@ -1,5 +1,10 @@
 /* HOME PAGE */
 
+#opening {
+    text-align: center;
+    padding-top: 1em;
+}
+
 #main-content-home {
     min-height: 100vh;
 }
@@ -339,4 +344,24 @@
 #latest-news-title {
     text-decoration: underline;
     text-underline-offset: 6px;
+}
+
+/* ABOUT */
+
+#about {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+    padding-bottom: 10rem;
+    align-content: center;
+    align-items: center;
+}
+
+#about-para {
+    width: 1000px;
+}
+
+#sleepy-cat {
+    padding-top: 2em;
 }

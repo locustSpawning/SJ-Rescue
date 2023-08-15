@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SJ Rescue</title>
+        <!-- Pay Pal Donate Script -->
+        <script
+            src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+            charset="UTF-8"
+        ></script>
+        <script defer src="../js-files/main.js"></script>
+        <script defer src="../js-files/donate.js"></script>
+        <link rel="stylesheet" href="../css-files/style.css" />
+        <link rel="stylesheet" href="../css-files/donate.css" />
+        <link rel="icon" href="../images/paw-print.png" type="icon" />
+    </head>
+    <body>
+        <header>
+            <div id="header-section-1">
+                <div id="header-content-top">
+                    <div id="header-section-1-left">
+                        <a
+                            ><img
+                                id="header-logo"
+                                src="../images/paw-print.png"
+                                alt="SJ Rescue"
+                                href="index.html"
+                        /></a>
+                        <div id="text-logo-grid">
+                            <h2 class="text-main-title-500-bold">
+                                South Jersey Rescue
+                            </h2>
+                            <h3 class="text-main-400">
+                                Adopt. Foster. Volunteer.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <a
+                        ><img id="header-profile" src="../images/profile5.png"
+                    /></a>
+                </div>
+            </div>
+            <div id="header-section-2">
+                <ul id="header-list" class="text-main-400">
+                    <li>
+                        <a class="header-link text-main-400" href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="adoption-forms.html"
+                            >Adoption | Foster Forms</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="animals-available.html"
+                            >Animals</a
+                        >
+                    </li>
+                    <li>
+                        <a class="header-link text-main-400" href="contact.html"
+                            >Contact</a
+                        >
+                    </li>
+
+                    <li>
+                        <button
+                            id="donate-button-header"
+                            class="text-paper-400-bold"
+                            onclick="window.location.href='#'"
+                            ,
+                        >
+                            Donate
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="donate-info">
+            <h1 class="text-main-title-600-semi-bold-underline">Donate</h1>
+            <p class="text-main-400" id="donate-para">
+                We are a charitable organization under IRS Code Section
+                501(c)(3) status. All donations are tax deductible and you will
+                receive a receipt by return mail for all monetary donations.
+                Your donations provide the animals in our care with food,
+                litter, and quality medical care. Without your support, many of
+                these animals would not survive, but with your financial help
+                and the TLC from our volunteers and foster parents loving homes,
+                these animals get a second chance to find loving homes. The
+                animals are grateful for your support and the adoptive homes are
+                too.
+            </p>
+        </section>
+
+        <section id="paypal">
+            <h1 class="text-main-title-600-semi-bold">PayPal</h1>
+            <p class="text-main-400">Donate online with PayPal!</p>
+            <!-- PAYPAY BUTTON -->
+            <div id="paypal-donate-button-container"></div>
+        </section>
+
+        <section id="mail-a-check">
+            <h1 class="text-main-title-600-semi-bold">Mail a Check</h1>
+            <p class="text-main-400">
+                South Jersey Rescue <br />128 Adalisa Ave <br />
+                Gibbstown, NJ, 0802
+            </p>
+        </section>
+
+        <section id="thankyou">
+            <h1 class="text-main-title-600-semi-bold" id="thanks-statement">
+                From all the animals and volunteers at South Jersey Rescue,
+                <strong class="text-accent-800-bold-berry">thank you</strong>
+                for donating!
+            </h1>
+            <img id="thanks-image" src="../images/girl _ dog.png" />
+        </section>
+
+        <footer>
+            <ul id="footer-list" class="text-slate-400-bold">
+                <li>
+                    <a class="footer-link text-slate-400-bold" href="#">Home</a>
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="adoption-forms.html"
+                        >Adoption | Foster Forms</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="animals-available.html"
+                        >Animals</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="contact.html"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+            <div id="stay-connected-footer">
+                <p class="text-slate-400-bold" id="stay-connected-text">
+                    Stay Connected!
+                </p>
+                <div id="footer-facebook-insta-links">
+                    <a
+                        href="https://www.facebook.com/southjerseyrescue/"
+                        target="_blank"
+                        ><img class="footer-image" src="../images/facebook.png"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/south_jersey_rescue/"
+                        target="_blank"
+                        ><img
+                            class="footer-image"
+                            src="../images/instagram (2).png"
+                    /></a>
+                </div>
+            </div>
+
+            <div id="footer-end-tag">
+                <a id="footer-final-note" class="text-paper-400-bold"
+                    >SJ Rescue ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <img
+                        id="footer-logo"
+                        src="../images/paw-print.png"
+                        alt="SJ Rescue"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

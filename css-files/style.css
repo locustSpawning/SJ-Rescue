@@ -86,6 +86,21 @@
     font-weight: var(--font-weight-bold);
 }
 
+.text-accent-500-bold-berry {
+    font-family: var(--ff-accent);
+    letter-spacing: 0.1rem;
+    color: var(--clr-berry);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-bold);
+}
+.text-accent-800-bold-berry {
+    font-family: var(--ff-accent);
+    letter-spacing: 0.1rem;
+    color: var(--clr-berry);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-bold);
+}
+
 .text-paper-400 {
     font-family: var(--ff-body);
     color: var(--clr-paper);
@@ -142,8 +157,15 @@
     color: var(--clr-deep-purple);
     font-size: var(--fs-600);
     font-weight: var(--font-weight-semi-boldold);
-    /* text-decoration: underline;
-    text-underline-offset: 5px; */
+}
+
+.text-main-title-600-semi-bold-underline {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    font-size: var(--fs-600);
+    font-weight: var(--font-weight-semi-boldold);
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .text-link {

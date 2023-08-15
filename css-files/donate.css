@@ -1,0 +1,37 @@
+/* DONATE PAGE*/
+
+#donate-info,
+#paypal,
+#mail-a-check,
+#thankyou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+}
+#donate-info {
+    padding-top: 5em;
+}
+
+#donate-para {
+    padding: 1em 0 2em;
+    max-width: 800px;
+}
+
+#thanks-statement {
+    max-width: 800px;
+    padding: 2em 0 2em;
+}
+
+#thanks-image {
+    padding-bottom: 3em;
+}
+
+#donate-button {
+    width: 200px;
+    height: auto;
+    padding-top: 2em;
+}
