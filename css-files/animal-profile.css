@@ -1,0 +1,17 @@
+/*ANIMAL PROFILE */
+
+#pet-id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 3em;
+}
+
+#pet-info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}

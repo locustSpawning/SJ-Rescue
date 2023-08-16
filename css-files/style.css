@@ -43,6 +43,14 @@
     font-weight: var(--font-weight-bold);
 }
 
+.text-highlight-bold-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+    text-decoration: underline;
+}
+
 .text-highlight-bold-500 {
     font-family: var(--ff-body);
     color: var(--clr-berry);
