@@ -295,6 +295,7 @@ button {
     box-shadow: var(--larger-shadow);
     transition: transform 0.3s;
     margin-top: 0.5rem;
+    font-family: var(--ff-body);
 }
 
 button:hover {

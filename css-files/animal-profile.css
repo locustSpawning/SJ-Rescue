@@ -9,9 +9,38 @@
     padding: 3em;
 }
 
-#pet-info-list {
+#pet-info-list,
+#about-animal-profile {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+#animal-photo {
+    height: auto;
+    width: 20em;
+    border-radius: 3px;
+    border: solid 3px var(--clr-deep-purple);
+    align-self: center;
+    margin: 2em 0 2em;
+}
+#pet-info-list li {
+    list-style-type: circle;
+}
+
+#about-title {
+    padding-top: 1em;
+}
+
+#animal-descriptive-paragraph {
+    max-width: 700px;
+    padding: 1em 0 3em;
+}
+
+#back-to-animals {
+    margin: 2em 0 5em;
+    width: 200px;
 }
