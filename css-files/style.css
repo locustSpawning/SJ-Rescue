@@ -351,6 +351,7 @@ header {
     background-color: var(--clr-stone);
     border: 2px solid;
     border-color: var(--clr-paper);
+    height: 70px;
 }
 
 #header-content-top {
@@ -369,6 +370,7 @@ header {
 #header-section-2 {
     background-color: var(--clr-slate);
     box-shadow: var(--smaller-shadow);
+    height: 60px;
 }
 
 #header-list,

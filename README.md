@@ -22,5 +22,6 @@ https://www.freepik.com/free-photo/sand-textures-background_3567239.htm
 https://www.freepik.com/free-vector/set-drawn-cute-pets_8229502.htm
 https://www.freepik.com/free-vector/women-playing-with-their-adorable-pets_8229500.htm
 https://www.freepik.com/free-vector/women-playing-with-their-adorable-pets_8229500.htm
+https://www.flaticon.com/free-icons/heart
 
 🐕 · 🐾 · 🐱 · 🐇 · 🐶 · 🐈 · 🐦

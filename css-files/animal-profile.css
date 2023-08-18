@@ -6,17 +6,29 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding: 3em;
+    padding: 3em 0 1em;
+    align-items: center;
 }
-
-#pet-info-list,
-#about-animal-profile {
+/* 
+#favorites {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center;
     padding: 1em;
+} */
+
+#pet-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2em;
+}
+#text-pet-info {
+    max-width: 500px;
+    align-self: center;
+    margin-left: 7em;
 }
 
 #animal-photo {
@@ -27,12 +39,22 @@
     align-self: center;
     margin: 2em 0 2em;
 }
-#pet-info-list li {
-    list-style-type: circle;
+
+#fav-buttons {
+    display: flex;
+    padding-bottom: 2em;
+}
+
+#pet-details {
+    max-width: 500px;
+}
+#pet-info li {
+    /* list-style-type: circle; */
+    padding-bottom: 0.2em;
 }
 
 #about-title {
-    padding-top: 1em;
+    padding: 2em 0 0;
 }
 
 #animal-descriptive-paragraph {
@@ -43,4 +65,27 @@
 #back-to-animals {
     margin: 2em 0 5em;
     width: 200px;
+    align-self: center;
+}
+
+.favorites-button {
+    display: inline-flex;
+    background-color: transparent;
+    color: var(--clr-deep-purple);
+    border: none;
+    cursor: pointer;
+    box-shadow: none;
+    gap: 10px;
+    padding: 0;
+    width: 300px;
+    margin: 0;
+    height: 40px;
+}
+
+.favorites-button img {
+    height: 20px;
+}
+
+.favorites-button:hover {
+    background-color: transparent;
 }

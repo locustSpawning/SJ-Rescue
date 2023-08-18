@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="../js-files/main.js"></script>
-        <script defer src="../js-files/animals-available.js"></script>
+        <script defer src="../js-files/animal-profile.js"></script>
         <link rel="stylesheet" href="../css-files/style.css" />
         <link rel="stylesheet" href="../css-files/animal-profile.css" />
         <link rel="icon" href="../images/paw-print.png" type="icon" />
@@ -86,22 +86,46 @@
             </p>
         </section>
 
-        <section id="pet-info-list">
-            <ul>
-                <li class="text-main-bold-400">Status:</li>
-                <li class="text-main-bold-400">Species:</li>
-                <li class="text-main-bold-400">Rescue ID:</li>
-                <li class="text-main-bold-400">Current Age:</li>
-            </ul>
-        </section>
+        <section id="pet-info">
+            <div id="text-pet-info">
+                <div id="fav-buttons">
+                    <button
+                        onclick="ToggleHeart()"
+                        class="favorites-button"
+                        id="heart-btn1"
+                    >
+                        <img
+                            id="blank-heart-animal"
+                            src="../images/heart.png"
+                        />
+                        <span>Favorite Animal Name</span>
+                    </button>
+                    <button onclick="ToggleHeart2()" class="favorites-button">
+                        <img
+                            id="blank-heart-species"
+                            src="../images/heart.png"
+                        /><span>Favorite Species</span>
+                    </button>
+                </div>
 
-        <section id="about-animal-profile">
-            <h1 class="text-main-title-500-reg" id="about-title">About</h1>
-            <p class="text-main-400" id="animal-descriptive-paragraph">
-                This will be a short paragraph about each animal...This animal
-                is so cute and sweet and needs a home. Please consider adopting
-                me.
-            </p>
+                <ul id="pet-details">
+                    <li class="text-main-bold-400">
+                        Status: Available for adoption
+                    </li>
+                    <li class="text-main-bold-400">Species: Tabby</li>
+                    <li class="text-main-bold-400">Rescue ID: 23-0037</li>
+                    <li class="text-main-bold-400">
+                        Current Age: 3 Months 7 Days (best estimate)
+                    </li>
+                </ul>
+
+                <h1 class="text-main-title-500-reg" id="about-title">About</h1>
+                <p class="text-main-400" id="animal-descriptive-paragraph">
+                    This will be a short paragraph about each animal...This
+                    animal is so cute and sweet and needs a home. Please
+                    consider adopting me.
+                </p>
+            </div>
             <button
                 id="back-to-animals"
                 class="text-paper-400-bold"
