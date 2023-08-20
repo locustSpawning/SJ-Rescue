@@ -303,6 +303,7 @@ button {
     transition: transform 0.3s;
     margin-top: 0.5rem;
     font-family: var(--ff-body);
+    cursor: pointer;
 }
 
 button:hover {

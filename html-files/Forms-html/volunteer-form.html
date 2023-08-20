@@ -92,17 +92,17 @@
                 </button>
 
                 <div class="container">
-                    <form id="volunteer-form-field">
+                    <form class="volunteer-form-field">
                         <h3 class="form-title text-main-title-500-bold">
                             -- Volunteer Form --
                         </h3>
-                        <div id="center-input">
+                        <div class="center-input">
                             <div class="input-info">
                                 <label for="first-name">First name:</label>
                                 <input
                                     id="first-name"
                                     type="text"
-                                    placeholder="First name"
+                                    autocomplete="off"
                                     required
                                 />
                             </div>
@@ -112,7 +112,7 @@
                                 <input
                                     id="last-name"
                                     type="text"
-                                    placeholder="Last name"
+                                    autocomplete="off"
                                     required
                                 />
                             </div>
@@ -122,7 +122,7 @@
                                 <input
                                     id="address"
                                     type="text"
-                                    placeholder="Address"
+                                    autocomplete="off"
                                 />
                             </div>
 
@@ -131,7 +131,7 @@
                                 <input
                                     id="city"
                                     type="text"
-                                    placeholder="City"
+                                    autocomplete="off"
                                 />
                             </div>
 
@@ -141,7 +141,7 @@
                                     <input
                                         id="state"
                                         type="text"
-                                        placeholder="State"
+                                        autocomplete="off"
                                     />
                                 </div>
                                 <div class="input-info">
@@ -149,7 +149,7 @@
                                     <input
                                         id="zip"
                                         type="number"
-                                        placeholder="Zip Code"
+                                        autocomplete="off"
                                     />
                                 </div>
                             </div>
@@ -159,7 +159,7 @@
                                 <input
                                     id="email"
                                     type="email"
-                                    placeholder="Email"
+                                    autocomplete="off"
                                     required
                                 />
                             </div>
@@ -169,11 +169,33 @@
                                 <input
                                     id="phone"
                                     type="number"
-                                    placeholder="Phone number"
+                                    autocomplete="off"
                                 />
                             </div>
                         </div>
+
+                        <div class="btn-box">
+                            <button type="button">Next</button>
+                        </div>
                     </form>
+
+                    <!-- <form class="volunteer-form-field">
+                        <h3 class="form-title text-main-title-500-bold">
+                            -- Volunteer Form Page 2--
+                        </h3>
+                        <div class="center-input">
+                            <label for="question1"
+                                >How did you hear about South Jersey
+                                Rescue?</label
+                            >
+                            <textarea
+                                id="question1"
+                                cols="50"
+                                rows="5"
+                                required
+                            ></textarea>
+                        </div>
+                    </form> -->
                 </div>
             </div>
         </section>
