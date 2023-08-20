@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="../../js-files/main.js"></script>
+        <script defer src="../../js-files/forms.js"></script>
         <link rel="stylesheet" href="../../css-files/style.css" />
         <link rel="stylesheet" href="../../css-files/forms.css" />
         <link rel="icon" href="../../images/paw-print.png" type="icon" />
@@ -92,7 +93,8 @@
                 </button>
 
                 <div class="container">
-                    <form class="volunteer-form-field">
+                    <!-- FORM PAGE 1 -->
+                    <form class="volunteer-form-field" id="form1">
                         <h3 class="form-title text-main-title-500-bold">
                             -- Volunteer Form --
                         </h3>
@@ -175,11 +177,14 @@
                         </div>
 
                         <div class="btn-box">
-                            <button type="button">Next</button>
+                            <button type="button" id="next-first-page">
+                                Next
+                            </button>
                         </div>
                     </form>
 
-                    <!-- <form class="volunteer-form-field">
+                    <!-- FORM PAGE 2 -->
+                    <form class="volunteer-form-field" id="form2">
                         <h3 class="form-title text-main-title-500-bold">
                             -- Volunteer Form Page 2--
                         </h3>
@@ -195,7 +200,13 @@
                                 required
                             ></textarea>
                         </div>
-                    </form> -->
+                        <div class="btn-box">
+                            <button type="button" id="back-second-page">
+                                Back
+                            </button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
