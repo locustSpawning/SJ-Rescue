@@ -1,0 +1,116 @@
+/* FORMS STYLES */
+
+#volunteer-form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5em 0 5em;
+    gap: 1em;
+}
+
+#back-to-forms-button {
+    background-color: var(--clr-paper);
+    color: var(--clr-slate);
+    border-color: var(--clr-slate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-semi-bold);
+    gap: 0.5em;
+    animation: fadeIn 1.5s;
+}
+
+.container {
+    width: 700px;
+    height: 900px;
+    background: var(--clr-paper);
+    border-radius: 5px;
+    position: relative;
+    box-shadow: var(--smaller-shadow);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1.5s;
+}
+
+.container form {
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+#center-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    margin-bottom: 50px;
+}
+
+.input-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input {
+    padding: 0.5em;
+    border: solid 1px var(--clr-deep-purple);
+    border-radius: 3px;
+    max-width: 350px;
+    min-width: 450px;
+    max-height: 35px;
+    min-height: 35px;
+    background-color: var(--clr-paper);
+    margin-bottom: 30px;
+    color: var(--clr-deep-purple);
+    font-family: var(--ff-body);
+}
+
+label {
+    color: var(--clr-deep-purple);
+    font-family: var(--ff-body);
+}
+
+#state-zip {
+    display: flex;
+    gap: 1em;
+}
+#state-zip input {
+    max-width: 217px;
+    min-width: 217px;
+}
+
+::placeholder {
+    color: var(--clr-slate);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

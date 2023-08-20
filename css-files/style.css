@@ -139,6 +139,13 @@
     text-underline-offset: 5px;
 }
 
+.text-slate-400-reg {
+    font-family: var(--ff-body);
+    color: var(--clr-slate);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-regular);
+}
+
 .text-slate-400-bold {
     font-family: var(--ff-body);
     color: var(--clr-slate);

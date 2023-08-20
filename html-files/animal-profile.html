@@ -76,14 +76,60 @@
             </div>
         </header>
 
-        <section id="pet-id">
+        <section id="pet-id" aria-label="pet-photos">
             <h1 class="text-main-title-500-reg">Animal Name</h1>
-            <img id="animal-photo" src="../images/animals/piccolo.jpg" />
-            <p class="text-main-400">
-                Looking to adopt? <br />
-                Fill out a form
-                <a class="text-highlight-bold-400" href="#">here!</a>
-            </p>
+
+            <div class="carousel">
+                <!-- previous button -->
+                <button class="carousel-button carousel-button--left is-hidden">
+                    <img src="../images/next.png" alt="previous" />
+                </button>
+
+                <!-- carousel -->
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide" data-active>
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-1"
+                                src="../images/animals/piccolo.jpg"
+                            />
+                        </li>
+                        <li class="carousel__slide">
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-2"
+                                src="../images/animals/phoebe.jpg"
+                            />
+                        </li>
+                        <li class="carousel__slide">
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-3"
+                                src="../images/animals/flick.jpg"
+                            />
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- next button -->
+                <button class="carousel-button carousel-button--right">
+                    <img src="../images/next.png" alt="next" />
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button
+                    ><button class="carousel__indicator"></button
+                    ><button class="carousel__indicator"></button>
+                </div>
+            </div>
+
+            <div id="looking-to-adopt">
+                <p class="text-main-400">
+                    Looking to adopt? <br />
+                    Fill out a form
+                    <a class="text-highlight-bold-400" href="#">here!</a>
+                </p>
+            </div>
         </section>
 
         <section id="pet-info">
