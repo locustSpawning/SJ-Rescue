@@ -1,6 +1,7 @@
 /* FORMS STYLES */
 
-#volunteer-form {
+#volunteer-form,
+#adoption-form {
     display: flex;
     align-items: center;
     align-content: center;
@@ -52,7 +53,7 @@
 .container form {
     width: 600px;
     position: absolute;
-    top: 100px;
+    top: 60px;
     left: 40px;
     transition: 0.5s;
 }
@@ -62,16 +63,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .form-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .input-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    max-width: 450px;
+    text-align: start;
 }
 
 input {
@@ -88,6 +92,52 @@ input {
     min-height: 35px;
     margin-bottom: 30px;
     font-weight: 500;
+}
+#radio-button-questions,
+.check-options {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1em;
+    margin-bottom: 30px;
+}
+
+.check-options {
+    margin: 1em;
+    justify-content: flex-start;
+}
+
+#check-box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+}
+
+.radio-button,
+.checkbox {
+    width: 100%;
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    margin: 0;
+}
+
+textarea {
+    background-color: var(--clr-paper);
+    border-radius: 3px;
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    padding: 0.5em;
+    margin: 10px 0 30px;
+}
+
+/* REQUIRED */
+
+.required::after {
+    content: ' *';
+    color: red;
+    font-size: 20px;
 }
 
 /* Remove number scrollers*/
@@ -119,6 +169,7 @@ label {
 form button {
     width: 110px;
     height: 45px;
+    margin: 0 20px 0;
     background-color: var(--clr-deep-purple);
     font-weight: var(--font-weight-semi-bold);
 }
@@ -130,7 +181,10 @@ form button:hover {
 
 /* FORM PAGES*/
 
-#form2 {
+#form2,
+#form3,
+#form4,
+#form5 {
     left: 750px;
 }
 
@@ -144,4 +198,37 @@ form button:hover {
     100% {
         opacity: 1;
     }
+}
+
+/* SPECIFICS */
+
+#status-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-family: var(--ff-body);
+    font-size: 0.875rem;
+    gap: 2em;
+    margin-bottom: 1em;
+    color: var(--clr-deep-purple);
+    cursor: default;
+}
+
+.notice {
+    font-size: 0.875rem;
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#drop-down-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#animals-available-dropdown-menu {
+    font-family: var(--ff-body);
+    color: var(--clr-deep-purple);
 }
