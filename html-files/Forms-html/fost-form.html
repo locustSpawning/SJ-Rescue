@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SJ Rescue</title>
+        <script defer src="../../js-files/main.js"></script>
+        <script
+            defer
+            src="../../js-files/forms-scripts/adoption-forms.js"
+        ></script>
+        <link rel="stylesheet" href="../../css-files/style.css" />
+        <link rel="stylesheet" href="../../css-files/forms.css" />
+        <link rel="icon" href="../../images/paw-print.png" type="icon" />
+    </head>
+    <body>
+        <header>
+            <div id="header-section-1">
+                <div id="header-content-top">
+                    <div id="header-section-1-left">
+                        <a href="index.html"
+                            ><img
+                                id="header-logo"
+                                src="../../images/paw-print.png"
+                                alt="SJ Rescue"
+                        /></a>
+                        <div id="text-logo-grid">
+                            <h2 class="text-main-title-500-bold">
+                                South Jersey Rescue
+                            </h2>
+                            <h3 class="text-main-400">
+                                Adopt. Foster. Volunteer.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <a
+                        ><img
+                            id="header-profile"
+                            src="../../images/profile5.png"
+                    /></a>
+                </div>
+            </div>
+            <div id="header-section-2">
+                <ul id="header-list" class="text-main-400">
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../adoption-forms.html"
+                            >Adoption | Foster Forms</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../animals-available.html"
+                            >Animals</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                    <li>
+                        <button
+                            id="donate-button-header"
+                            class="text-paper-400-bold"
+                            onclick="window.location.href='../donate.html'"
+                            ,
+                        >
+                            Donate
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="adoption-form">
+            <div id="form-center">
+                <button
+                    id="back-to-forms-button"
+                    onclick="window.location.href='../adoption-forms.html'"
+                    ,
+                >
+                    <img src="../../images/back-arrow.png" />All Forms
+                </button>
+
+                <div class="container">
+                    <!-- FORM PAGE 1 -->
+                    <form class="foster-form-field" id="form1">
+                        <h3 class="form-title text-main-title-500-bold">
+                            -- Foster Form Page 1 of 5--
+                        </h3>
+                        <div class="center-input">
+                            <div class="input-info">
+                                <label for="first-name" class="required"
+                                    >First name:</label
+                                >
+                                <input
+                                    id="first-name"
+                                    type="text"
+                                    autocomplete="off"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-info">
+                                <label for="last-name" class="required"
+                                    >Last name:</label
+                                >
+                                <input
+                                    id="last-name"
+                                    type="text"
+                                    autocomplete="off"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-info">
+                                <label for="address">Address:</label>
+                                <input
+                                    id="address"
+                                    type="text"
+                                    autocomplete="off"
+                                />
+                            </div>
+
+                            <div class="input-info">
+                                <label for="city">City:</label>
+                                <input
+                                    id="city"
+                                    type="text"
+                                    autocomplete="off"
+                                />
+                            </div>
+
+                            <div id="state-zip">
+                                <div class="input-info">
+                                    <label for="state">State:</label>
+                                    <input
+                                        id="state"
+                                        type="text"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <div class="input-info">
+                                    <label for="zip">Zip code:</label>
+                                    <input
+                                        id="zip"
+                                        type="number"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="email" class="required"
+                                    >Email:</label
+                                >
+                                <input
+                                    id="email"
+                                    type="email"
+                                    autocomplete="off"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input-info">
+                                <label for="phone">Phone number:</label>
+                                <input
+                                    id="phone"
+                                    type="number"
+                                    autocomplete="off"
+                                />
+                            </div>
+                        </div>
+                        <!-- center-input -->
+
+                        <div class="btn-box">
+                            <button type="button" id="next-first-page">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- FORM PAGE 2 -->
+                    <form class="volunteer-form-field" id="form2">
+                        <h3 class="form-title text-main-title-500-bold">
+                            -- Foster Form Page 2 of 5--
+                        </h3>
+                        <div class="center-input">
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question1" class="required"
+                                        >I am interested in fostering a:</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="dog"
+                                        name="foster-ques"
+                                        value="dog"
+                                    />
+                                    <label for="dog">Dog</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="cat"
+                                        name="foster-ques"
+                                        value="cat"
+                                        required
+                                    />
+                                    <label for="cat">Cat</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question2" class="required"
+                                    >When are you available to begin
+                                    fostering?</label
+                                >
+                                <textarea
+                                    id="question2"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question3" class="required"
+                                    >Please inclue a family member reference
+                                    including name, relationship, and phone
+                                    number.</label
+                                >
+
+                                <textarea
+                                    id="question2"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question4" class="required"
+                                    >Please include a reference who is not a
+                                    family member including name, relationship,
+                                    and phone number.
+                                </label>
+                                <textarea
+                                    id="question4"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question5" class="required"
+                                    >List all people who live in your household
+                                    and their relationship to you</label
+                                >
+                                <textarea
+                                    id="question5"
+                                    cols="40"
+                                    rows="3"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div id="drop-down-section">
+                                <label for="question6" class="required"
+                                    >In what type of home do you live?</label
+                                >
+
+                                <select
+                                    name="home-type"
+                                    id="home-type-dropdown-menu"
+                                >
+                                    <option value="" disabled selected hidden>
+                                        Select one
+                                    </option>
+                                    <option value="Single family">
+                                        Single family
+                                    </option>
+                                    <option value="Duplex">Duplex</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Townhouse">Townhouse</option>
+                                    <option value="Condominium">
+                                        Condominium
+                                    </option>
+                                    <option value="Mobile home">
+                                        Mobile home
+                                    </option>
+                                    <option value="Military housing">
+                                        Military housing
+                                    </option>
+                                </select>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question7" class="required"
+                                        >Do you own or rent your home?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="own"
+                                        name="housing-ques"
+                                        value="own"
+                                    />
+                                    <label for="own">Own</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="rent"
+                                        name="housing-ques"
+                                        value="rent"
+                                        required
+                                    />
+                                    <label for="rent">Rent</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question8"
+                                        >If renting, have you recieved approval
+                                        to have a pet?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="rent-approval-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="rent-approval-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- center-input -->
+
+                        <div class="btn-box">
+                            <button type="button" id="back-second-page">
+                                Back
+                            </button>
+                            <button type="button" id="next-second-page">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- FORM PAGE 3 -->
+                    <form class="volunteer-form-field" id="form3">
+                        <div class="center-input">
+                            <h3 class="form-title text-main-title-500-bold">
+                                -- Foster Form Page 3 of 5--
+                            </h3>
+                            <div class="input-info">
+                                <label for="question9"
+                                    >If renting, please enter your landlord's
+                                    name a phone number</label
+                                >
+                                <textarea
+                                    id="question9"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question10"
+                                        >Is your yard fenced?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-fenced-yard-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-fenced-yard-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question11"
+                                    >What is the height of your fence?</label
+                                >
+                                <textarea
+                                    id="question11"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question12" class="required"
+                                    >Have you discussed fostering an animal with
+                                    other members of your household?</label
+                                >
+
+                                <textarea
+                                    id="question12"
+                                    cols="40"
+                                    rows="2"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question13" class="required"
+                                    >Who in the household will care for the
+                                    pet?</label
+                                >
+
+                                <textarea
+                                    id="question13"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question14" class="required"
+                                    >How much time will the animal spend alone
+                                    during the day?</label
+                                >
+
+                                <textarea
+                                    id="question14"
+                                    cols="40"
+                                    rows="1"
+                                    required
+                                ></textarea>
+                            </div>
+                        </div>
+                        <div class="btn-box">
+                            <button type="button" id="back-third-page">
+                                Back
+                            </button>
+                            <button type="button" id="next-third-page">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- FORM PAGE 4 -->
+                    <form class="volunteer-form-field" id="form4">
+                        <h3 class="form-title text-main-title-500-bold">
+                            -- Foster Form Page 4 of 5--
+                        </h3>
+                        <div class="center-input">
+                            <div class="input-info">
+                                <label for="question15" class="required"
+                                    >Please list the number and type of other
+                                    pets that live in your house:</label
+                                >
+
+                                <textarea
+                                    id="question15"
+                                    cols="40"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question16"
+                                        >If you have other pets, do they get
+                                        along with other animals?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-pets-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-pets-ques"
+                                        value="no"
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question15" class="required"
+                                    >Please list the number and type of other
+                                    pets that live in your house:</label
+                                >
+
+                                <textarea
+                                    id="question15"
+                                    cols="40"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question16"
+                                        >If you have other pets, are they
+                                        spayed/neutered?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-pets-care-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-pets-care-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question17" class="required"
+                                    >Please provide your veterinarian's name and
+                                    phone number:</label
+                                >
+
+                                <textarea
+                                    id="question17"
+                                    cols="40"
+                                    rows="3"
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question18" class="required"
+                                    >Where will the animal be kept when you are
+                                    home?</label
+                                >
+
+                                <textarea
+                                    id="question18"
+                                    cols="40"
+                                    rows="1"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <!-- center-input -->
+                        <div class="btn-box">
+                            <button type="button" id="back-fourth-page">
+                                Back
+                            </button>
+                            <button type="button" id="next-fourth-page">
+                                Next
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- FORM PAGE 5 -->
+                    <form class="volunteer-form-field" id="form5">
+                        <h3 class="form-title text-main-title-500-bold">
+                            -- Foster Form Page 5 of 5--
+                        </h3>
+                        <div class="center-input">
+                            <div class="input-info">
+                                <label for="question19" class="required"
+                                    >Where will the animal sleep?</label
+                                >
+
+                                <textarea
+                                    id="question19"
+                                    cols="40"
+                                    rows="1"
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question20" class="required"
+                                        >Do you agree to a home vist before
+                                        fostering an animal?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-home-visit-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-home-visit-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question21" class="required"
+                                        >Will you be willing to bring your
+                                        foster animal to weekend adoption
+                                        events?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-events-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-events-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question22" class="required"
+                                        >Can a prospective adopter call you
+                                        regarding your foster animal?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-call-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-call-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <div id="radio-button-questions">
+                                    <label for="question23" class="required"
+                                        >Can a prospective adopter visit your
+                                        home to meet the foster animal?</label
+                                    >
+
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="yes"
+                                        name="foster-visit-ques"
+                                        value="yes"
+                                    />
+                                    <label for="yes">Yes</label>
+                                    <input
+                                        class="radio-button"
+                                        type="radio"
+                                        id="no"
+                                        name="foster-visit-ques"
+                                        value="no"
+                                        required
+                                    />
+                                    <label for="no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question24" class="required"
+                                    >Please print your name to indicate your
+                                    permission for South Jersey Rescue to verify
+                                    the information above.</label
+                                >
+
+                                <textarea
+                                    id="question24"
+                                    cols="40"
+                                    rows="1"
+                                ></textarea>
+                            </div>
+
+                            <div class="input-info">
+                                <label for="question25" class="required"
+                                    >Please enter the date.</label
+                                >
+
+                                <textarea
+                                    id="question25"
+                                    cols="40"
+                                    rows="1"
+                                ></textarea>
+                            </div>
+                        </div>
+                        <!-- center-input -->
+                        <div class="btn-box">
+                            <button type="button" id="back-fifth-page">
+                                Back
+                            </button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <ul id="footer-list" class="text-slate-400-bold">
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../index.html"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../adoption-forms.html"
+                        >Adoption | Foster Forms</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../animals-available.html"
+                        >Animals</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../contact.html"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+            <div id="stay-connected-footer">
+                <p class="text-slate-400-bold" id="stay-connected-text">
+                    Stay Connected!
+                </p>
+                <div id="footer-facebook-insta-links">
+                    <a
+                        href="https://www.facebook.com/southjerseyrescue/"
+                        target="_blank"
+                        ><img
+                            class="footer-image"
+                            src="../../images/facebook.png"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/south_jersey_rescue/"
+                        target="_blank"
+                        ><img
+                            class="footer-image"
+                            src="../../images/instagram (2).png"
+                    /></a>
+                </div>
+            </div>
+
+            <div id="footer-end-tag">
+                <a id="footer-final-note" class="text-paper-400-bold"
+                    >SJ Rescue ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <img
+                        id="footer-logo"
+                        src="../../images/paw-print.png"
+                        alt="SJ Rescue"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

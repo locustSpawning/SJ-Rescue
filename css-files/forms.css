@@ -1,7 +1,8 @@
 /* FORMS STYLES */
 
 #volunteer-form,
-#adoption-form {
+#adoption-form,
+#foster-form {
     display: flex;
     align-items: center;
     align-content: center;
@@ -228,7 +229,8 @@ form button:hover {
     margin-bottom: 1em;
 }
 
-#animals-available-dropdown-menu {
+#animals-available-dropdown-menu,
+#home-type-dropdown-menu {
     font-family: var(--ff-body);
     color: var(--clr-deep-purple);
 }
