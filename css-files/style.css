@@ -51,6 +51,22 @@
     text-decoration: underline;
 }
 
+.text-highlight-semi-400 {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-semi-bold);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.text-highlight-semi-400-no-und {
+    font-family: var(--ff-body);
+    color: var(--clr-berry);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-semi-bold);
+}
+
 .text-highlight-bold-500 {
     font-family: var(--ff-body);
     color: var(--clr-berry);

@@ -55,6 +55,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+#sponsor-link {
+    margin-top: 1em;
+}
+
 /* ANIMALS GRID */
 
 #animal-grid {

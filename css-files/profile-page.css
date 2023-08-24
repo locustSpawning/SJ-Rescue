@@ -1,0 +1,70 @@
+/* PROFILE PAGE CSS */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 7em 0 10em;
+}
+
+.info-section {
+    margin-bottom: 5em;
+}
+
+#center-text {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.highlight-link:hover {
+    color: var(--clr-mountain-pink);
+}
+
+#center-links {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-links {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    margin-top: 0.7em;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+#form1,
+#form2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3em;
+    margin-top: 0.7em;
+}
+
+.complete-text {
+    font-family: var(--ff-body);
+    color: var(--clr-slate);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+.incomplete-text {
+    font-family: var(--ff-body);
+    color: var(--clr-mountain-pink);
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-bold);
+}
+
+#fav-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7em;
+}
+
+#sponsorship1 {
+    margin-top: 0.7em;
+}

@@ -5,12 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="../js-files/main.js"></script>
-        <script defer src="../js-files/animal-profile.js"></script>
+        <script defer src="../js-files/profile-page.js"></script>
         <script
             src="https://kit.fontawesome.com/38a8b83142.js"
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="../css-files/style.css" />
+        <link rel="stylesheet" href="../css-files/profile-page.css" />
         <link rel="stylesheet" href="../css-files/animal-profile.css" />
         <link rel="icon" href="../images/paw-print.png" type="icon" />
     </head>
@@ -35,7 +36,7 @@
                         </div>
                     </div>
 
-                    <a href="profile-page.html"
+                    <a href="#"
                         ><img id="header-profile" src="../images/profile5.png"
                     /></a>
                 </div>
@@ -66,6 +67,7 @@
                             >Contact</a
                         >
                     </li>
+
                     <li>
                         <button
                             id="donate-button-header"
@@ -80,115 +82,121 @@
             </div>
         </header>
 
-        <section id="pet-id" aria-label="pet-photos">
-            <h1 class="text-main-title-500-reg">Animal Name</h1>
+        <div id="container">
+            <div id="center-text">
+                <section id="my-profile" class="info-section">
+                    <h3 class="text-main-title-500-bold">My Profile</h3>
+                    <div id="center-links">
+                        <div id="profile-links">
+                            <a
+                                href="#"
+                                id="preferences"
+                                class="text-highlight-semi-400 highlight-link"
+                                >Preferences</a
+                            >
+                            <a
+                                href="#"
+                                id="my-info"
+                                class="text-highlight-semi-400 highlight-link"
+                                >My Information</a
+                            >
+                        </div>
+                    </div>
+                </section>
 
-            <div class="carousel">
-                <!-- previous button -->
-                <button class="carousel-button carousel-button--left is-hidden">
-                    <img src="../images/next.png" alt="previous" />
-                </button>
+                <section id="my-applications" class="info-section">
+                    <h3 class="text-main-title-500-bold">My Applications</h3>
+                    <div id="applications-status">
+                        <div id="form1">
+                            <p class="text-highlight-semi-400-no-und">
+                                <!-- title should no longer be a clickable link if its marked complete -->
+                                Adoption form
+                            </p>
+                            <p class="complete-text">Complete</p>
+                        </div>
 
-                <!-- carousel -->
-                <div class="carousel__track-container">
-                    <ul class="carousel__track">
-                        <li class="carousel__slide current-slide" data-active>
+                        <div id="form2">
+                            <a
+                                href="#"
+                                class="text-highlight-semi-400 highlight-link"
+                                >Foster Form</a
+                            >
+                            <p class="incomplete-text">Incomplete</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="favorite-animals" class="info-section">
+                    <h3 class="text-main-title-500-bold">Favorite Animals</h3>
+                    <div id="fav-buttons">
+                        <button
+                            onclick="locateHeartAnimal()"
+                            class="favorites-button"
+                            id="heart-btn1"
+                        >
                             <img
-                                class="carousel-image"
-                                alt="pet-image-1"
-                                src="../images/animals/piccolo.jpg"
+                                class="filled-heart-animal"
+                                src="../images/heart (1).png"
                             />
-                        </li>
-                        <li class="carousel__slide">
+                            <span class="text-highlight-semi-400-no-und"
+                                >Piccolo</span
+                            >
+                        </button>
+                        <button
+                            onclick="locateHeartAnimal()"
+                            class="favorites-button"
+                        >
                             <img
-                                class="carousel-image"
-                                alt="pet-image-2"
-                                src="../images/animals/phoebe.jpg"
-                            />
-                        </li>
-                        <li class="carousel__slide">
+                                class="filled-heart-animal"
+                                src="../images/heart (1).png"
+                            /><span class="text-highlight-semi-400-no-und"
+                                >Flash</span
+                            >
+                        </button>
+                    </div>
+                </section>
+
+                <section id="favorite-breeds" class="info-section">
+                    <h3 class="text-main-title-500-bold">Favorite Breeds</h3>
+                    <div id="fav-buttons">
+                        <button
+                            onclick="locateHeartSpecies()"
+                            class="favorites-button"
+                            id="heart-btn1"
+                        >
                             <img
-                                class="carousel-image"
-                                alt="pet-image-3"
-                                src="../images/animals/flick.jpg"
+                                class="filled-heart-species"
+                                src="../images/heart (1).png"
                             />
-                        </li>
-                    </ul>
-                </div>
+                            <span class="text-highlight-semi-400-no-und"
+                                >Tabby</span
+                            >
+                        </button>
+                        <button
+                            onclick="locateHeartSpecies()"
+                            class="favorites-button"
+                        >
+                            <img
+                                class="filled-heart-species"
+                                src="../images/heart (1).png"
+                            /><span class="text-highlight-semi-400-no-und"
+                                >Beagle</span
+                            >
+                        </button>
+                    </div>
+                </section>
 
-                <!-- next button -->
-                <button class="carousel-button carousel-button--right">
-                    <img src="../images/next.png" alt="next" />
-                </button>
-                <div class="carousel__nav">
-                    <button class="carousel__indicator current-slide"></button
-                    ><button class="carousel__indicator"></button
-                    ><button class="carousel__indicator"></button>
-                </div>
-            </div>
-
-            <div id="looking-to-adopt">
-                <p class="text-main-400">
-                    Looking to adopt? <br />
-                    Fill out a form
+                <section id="sponsors" class="info-section">
+                    <h3 class="text-main-title-500-bold">My Sponsorships</h3>
                     <a
-                        class="text-highlight-bold-400"
-                        href="Forms-html/adopt-form.html"
-                        >here!</a
+                        href="#"
+                        id="sponsorship1"
+                        class="text-highlight-semi-400 highlight-link"
+                        >Smokey</a
                     >
-                </p>
+                </section>
             </div>
-        </section>
-
-        <section id="pet-info">
-            <div id="text-pet-info">
-                <div id="fav-buttons">
-                    <button
-                        onclick="ToggleHeart()"
-                        class="favorites-button"
-                        id="heart-btn1"
-                    >
-                        <img
-                            id="blank-heart-animal"
-                            src="../images/heart.png"
-                        />
-                        <span>Favorite Animal Name</span>
-                    </button>
-                    <button onclick="ToggleHeart2()" class="favorites-button">
-                        <img
-                            id="blank-heart-species"
-                            src="../images/heart.png"
-                        /><span>Favorite Species</span>
-                    </button>
-                </div>
-
-                <ul id="pet-details">
-                    <li class="text-main-bold-400">
-                        Status: Available for adoption
-                    </li>
-                    <li class="text-main-bold-400">Species: Tabby</li>
-                    <li class="text-main-bold-400">Rescue ID: 23-0037</li>
-                    <li class="text-main-bold-400">
-                        Current Age: 3 Months 7 Days (best estimate)
-                    </li>
-                </ul>
-
-                <h1 class="text-main-title-500-reg" id="about-title">About</h1>
-                <p class="text-main-400" id="animal-descriptive-paragraph">
-                    This will be a short paragraph about each animal...This
-                    animal is so cute and sweet and needs a home. Please
-                    consider adopting me.
-                </p>
-            </div>
-            <button
-                id="back-to-animals"
-                class="text-paper-400-bold"
-                onclick="window.location.href='animals-available.html'"
-                ,
-            >
-                Back to Animals
-            </button>
-        </section>
+        </div>
 
         <!-- back to top -->
         <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
@@ -196,7 +204,9 @@
         <footer>
             <ul id="footer-list" class="text-slate-400-bold">
                 <li>
-                    <a class="footer-link text-slate-400-bold" href="#">Home</a>
+                    <a class="footer-link text-slate-400-bold" href="index.html"
+                        >Home</a
+                    >
                 </li>
                 <li>
                     <a
