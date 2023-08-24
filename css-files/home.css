@@ -359,9 +359,36 @@
 }
 
 #about-para {
-    width: 1000px;
+    width: 900px;
 }
 
 #sleepy-cat {
     padding-top: 2em;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 60em) {
+    #about-para {
+        width: 500px;
+    }
+}
+
+@media (max-width: 50em) {
+    #section-1-home {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    #girl-cat-picture,
+    #sleepy-cat {
+        height: 15em;
+        width: auto;
+    }
+    #news {
+        margin: 0.5em;
+    }
+
+    #about-para {
+        width: 400px;
+    }
 }
