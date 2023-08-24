@@ -169,6 +169,13 @@
     font-weight: var(--font-weight-bold);
 }
 
+.text-slate-500-reg {
+    font-family: var(--ff-body);
+    color: var(--clr-slate);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-regular);
+}
+
 .text-slate-600-bold {
     font-family: var(--ff-body);
     color: var(--clr-slate);
@@ -340,7 +347,8 @@ button:active {
 }
 
 #header-logo,
-#header-profile {
+#header-profile,
+.menu-button {
     height: 3rem;
     width: 3rem;
     margin: 0.5rem;
@@ -438,6 +446,73 @@ header {
     opacity: 1;
 }
 
+/* HEADER SMALL SCREENS */
+
+#small-screen-header {
+    background-color: var(--clr-stone);
+    box-shadow: var(--smaller-shadow);
+}
+
+#margin-container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0 4rem 0;
+}
+
+@media (max-width: 50em) {
+    .header {
+        display: none;
+    }
+    #margin-container {
+        display: flex;
+    }
+}
+
+@media (min-width: 50em) {
+    .header {
+        display: flex;
+    }
+    #margin-container {
+        display: none;
+    }
+
+    #small-menu-dropdown {
+        display: none;
+    }
+}
+
+/* SMALL SCREEN MENU */
+
+#drop-down-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: var(--clr-stone);
+}
+#mini-list,
+#mini-list li {
+    padding: 0.5em;
+}
+
+#mini-list a {
+    text-decoration: none;
+}
+#mini-list a:hover {
+    color: var(--clr-blue-jay);
+}
+
+.current-page-drop-down {
+    font-family: var(--ff-body);
+    color: var(--clr-blue-jay);
+    font-size: var(--fs-500);
+    font-weight: var(--font-weight-semi-bold);
+}
+
 /* TO TOP BUTTON */
 .to-top {
     background-color: var(--clr-slate);
@@ -516,6 +591,14 @@ footer {
 
 .footer-link:hover {
     color: var(--clr-paper);
+}
+
+/* FOOTER SMALL SCREENS */
+
+@media (max-width: 50em) {
+    #footer-list {
+        display: none;
+    }
 }
 
 /* SCROLL BAR */

@@ -2,20 +2,22 @@
 
 //FAVORITE FEATURE
 
-let favIconAnimal = document.querySelector('.filled-heart-animal');
-let favIconSpecies = document.querySelector('.filled-heart-species');
+let favIconAnimal = document.querySelectorAll('.filled-heart-animal');
+let favIconSpecies = document.querySelectorAll('.filled-heart-species');
+console.log(favIconAnimal);
+console.log(favIconSpecies);
 
-function locateHeartAnimal() {
+function locateHeartAnimal(favIconAnimal) {
     let targetFavIconAnimal = favIconAnimal.closest('img');
-    console.log(targetFavIconAnimal);
+    // console.log(targetFavIconAnimal);
     if (targetFavIconAnimal) {
         ToggleHeart(targetFavIconAnimal);
     }
 }
 
-function locateHeartSpecies() {
-    let targetFavIconSpecies = favIconAnimal.closest('img');
-    console.log(targetFavIconSpecies);
+function locateHeartSpecies(favIconSpecies) {
+    let targetFavIconSpecies = favIconSpecies.closest('img');
+    // console.log(targetFavIconSpecies);
     if (targetFavIconSpecies) {
         ToggleHeart2(targetFavIconSpecies);
     }
@@ -23,7 +25,7 @@ function locateHeartSpecies() {
 
 function ToggleHeart(targetFavIconAnimal) {
     let decoded = targetFavIconAnimal.getAttribute('src');
-    console.log(decoded);
+    // console.log(decoded);
     if (decoded == '../images/heart (1).png') {
         targetFavIconAnimal.src = '../images/heart.png';
     } else {
@@ -32,7 +34,8 @@ function ToggleHeart(targetFavIconAnimal) {
 }
 
 function ToggleHeart2(targetFavIconSpecies) {
-    if (targetFavIconSpecies.src.match('../images/heart (1).png')) {
+    let decoded = targetFavIconSpecies.getAttribute('src');
+    if (decoded == '../images/heart (1).png') {
         targetFavIconSpecies.src = '../images/heart.png';
     } else {
         targetFavIconSpecies.src = '../images/heart (1).png';
