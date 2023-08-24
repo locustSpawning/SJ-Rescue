@@ -35,9 +35,11 @@
     align-items: center;
     border-spacing: 5px 5rem;
     padding-left: 5em;
+    width: 100%;
 }
 
-#view-animals-here {
+#view-animals-here,
+#view-animals-here-small-screen {
     background-image: radial-gradient(
         circle 1500px,
         var(--clr-berry),
@@ -57,4 +59,43 @@
 
 .text-link {
     cursor: pointer;
+}
+
+/* SMALL SCREEN */
+
+@media (max-width: 50em) {
+    td {
+        display: block;
+    }
+    .looking-to {
+        text-align: center;
+    }
+    .purple-line {
+        visibility: hidden;
+    }
+    #adopt-image,
+    #foster-image,
+    #volunteer-image,
+    #sponsor-image {
+        padding: 1.5em 0 3em;
+        margin: 0;
+        height: 15em;
+        width: auto;
+    }
+    #volunteer-image,
+    #foster-image {
+        margin-left: 3em;
+    }
+    #view-animals-here {
+        display: none;
+    }
+    #view-animals-here-small-screen {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 50em) {
+    #view-animals-here-small-screen {
+        display: none;
+    }
 }

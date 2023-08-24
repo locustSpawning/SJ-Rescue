@@ -17,40 +17,40 @@ var backFifthPage = document.getElementById('back-fifth-page');
 
 nextFirstPage.onclick = function () {
     form1.style.left = '-750px';
-    form2.style.left = '40px';
+    form2.style.left = '0px';
 };
 
 nextSecondPage.onclick = function () {
     form2.style.left = '-750px';
-    form3.style.left = '40px';
+    form3.style.left = '0px';
 };
 
 nextThirdPage.onclick = function () {
     form3.style.left = '-750px';
-    form4.style.left = '40px';
+    form4.style.left = '0px';
 };
 
 nextFourthPage.onclick = function () {
     form4.style.left = '-750px';
-    form5.style.left = '40px';
+    form5.style.left = '0px';
 };
 
 backSecondPage.onclick = function () {
-    form1.style.left = '40px';
+    form1.style.left = '0px';
     form2.style.left = '750px';
 };
 
 backThirdPage.onclick = function () {
-    form2.style.left = '40px';
+    form2.style.left = '0px';
     form3.style.left = '750px';
 };
 
 backFourthPage.onclick = function () {
-    form3.style.left = '40px';
+    form3.style.left = '0px';
     form4.style.left = '750px';
 };
 
 backFifthPage.onclick = function () {
-    form4.style.left = '40px';
+    form4.style.left = '0px';
     form5.style.left = '750px';
 };

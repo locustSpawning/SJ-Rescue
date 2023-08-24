@@ -55,7 +55,7 @@
     width: 600px;
     position: absolute;
     top: 60px;
-    left: 40px;
+    /* left: 40px; */
     transition: 0.5s;
 }
 
@@ -233,4 +233,56 @@ form button:hover {
 #home-type-dropdown-menu {
     font-family: var(--ff-body);
     color: var(--clr-deep-purple);
+}
+
+/* SMALL SCREEN */
+
+@media (max-width: 50em) {
+    #form-center {
+        align-items: center;
+    }
+    .container {
+        width: 480px;
+    }
+    .container form {
+        width: 480px;
+        left: 0;
+        top: 30px;
+    }
+    input {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        border-bottom: 1px solid var(--clr-deep-purple);
+        font-family: var(--ff-body);
+        background-color: var(--clr-paper);
+        max-width: 350px;
+        min-width: 350px;
+        max-height: 35px;
+        min-height: 35px;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    .input-info {
+        max-width: 350px;
+    }
+    textarea {
+        max-width: 350px;
+    }
+    .center-input {
+        justify-content: center;
+        align-items: center;
+    }
+    .form-title {
+        font-size: 1.3rem;
+    }
+    #state-zip {
+        flex-direction: column;
+        gap: 0;
+    }
+    #state-zip input {
+        max-width: 350px;
+        min-width: 350px;
+    }
 }
