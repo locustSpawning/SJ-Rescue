@@ -110,6 +110,7 @@ input.invalid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
+    margin-left: 0.5em;
 }
 
 .radio-button,
@@ -176,7 +177,8 @@ form button:hover {
     font-family: var(--ff-body);
     font-size: 0.875rem;
     gap: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
+    margin-left: 1em;
     color: var(--clr-deep-purple);
     cursor: default;
 }
@@ -184,8 +186,8 @@ form button:hover {
 .notice {
     font-size: 0.875rem;
     font-family: var(--ff-body);
-    color: var(--clr-deep-purple);
-    margin-bottom: 1em;
+    color: var(--clr-berry);
+    margin-bottom: 3em;
     text-align: center;
 }
 
