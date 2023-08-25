@@ -1,99 +1,97 @@
 /* FORMS STYLES */
 
-#volunteer-form,
-#adoption-form,
-#foster-form {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
+/* ALIGN BACK BUTTON AND FORM */
 
-#form-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+/* FADE IN ON LOAD */
+.container {
+    animation: fadeIn 1.5s;
     margin: 5em 0 5em;
     gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
 }
 
-#back-to-forms-button {
+/* FORM SYLING */
+
+#regForm {
     background-color: var(--clr-paper);
-    color: var(--clr-slate);
-    border-color: var(--clr-slate);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--fs-400);
-    font-weight: var(--font-weight-semi-bold);
-    gap: 0.5em;
-    animation: fadeIn 1.5s;
-    margin-bottom: 0.5em;
-}
-
-.container {
-    width: 700px;
-    height: 900px;
-    background: var(--clr-paper);
-    border-radius: 5px;
-    position: relative;
+    padding: 40px;
+    width: 70%;
+    min-width: 475px;
+    max-width: 845px;
     box-shadow: var(--smaller-shadow);
-    margin: 0;
-    padding: 0;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
     justify-content: center;
-    text-align: center;
-    animation: fadeIn 1.5s;
-    overflow: hidden;
-}
-
-.container form {
-    width: 600px;
-    position: absolute;
-    top: 60px;
-    /* left: 40px; */
-    transition: 0.5s;
-}
-
-.center-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     align-content: center;
 }
 
-.form-title {
+/* Style the input fields & labels*/
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: var(--ff-body);
+    border: 1px solid #aaaaaa;
+    background-color: var(--clr-paper);
+    color: var(--clr-deep-purple);
     margin-bottom: 30px;
+    font-weight: 500;
+    border: 0;
+    border-bottom: 1px solid var(--clr-deep-purple);
 }
 
-.input-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+label {
+    color: var(--clr-deep-purple);
+    font-family: var(--ff-body);
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+
     max-width: 450px;
     text-align: start;
 }
 
-input {
-    width: 100%;
-    padding: 10px 5px;
-    margin: 5px 0;
-    border: 0;
-    border-bottom: 1px solid var(--clr-deep-purple);
-    font-family: var(--ff-body);
-    background-color: var(--clr-paper);
-    max-width: 350px;
-    min-width: 450px;
-    max-height: 35px;
-    min-height: 35px;
-    margin-bottom: 30px;
-    font-weight: 500;
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
 }
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04aa6d;
+}
+
+.form-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
 #radio-button-questions,
 .check-options {
     display: flex;
@@ -133,14 +131,6 @@ textarea {
     margin: 10px 0 30px;
 }
 
-/* REQUIRED */
-
-.required::after {
-    content: ' *';
-    color: red;
-    font-size: 20px;
-}
-
 /* Remove number scrollers*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -148,23 +138,9 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-label {
-    color: var(--clr-deep-purple);
-    font-family: var(--ff-body);
-}
-
 #state-zip {
     display: flex;
     gap: 1em;
-}
-#state-zip input {
-    max-width: 217px;
-    min-width: 217px;
-}
-
-.btn-box {
-    width: 100%;
-    text-align: center;
 }
 
 form button {
@@ -178,15 +154,6 @@ form button {
 form button:hover {
     background-color: var(--clr-berry);
     border-color: var(--clr-berry);
-}
-
-/* FORM PAGES*/
-
-#form2,
-#form3,
-#form4,
-#form5 {
-    left: 750px;
 }
 
 /* Animations */
@@ -235,54 +202,29 @@ form button:hover {
     color: var(--clr-deep-purple);
 }
 
+/* BACK TO ALL FORMS */
+#back-to-forms-button {
+    background-color: var(--clr-paper);
+    color: var(--clr-slate);
+    border-color: var(--clr-slate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--fs-400);
+    font-weight: var(--font-weight-semi-bold);
+    gap: 0.5em;
+    animation: fadeIn 1.5s;
+    margin-bottom: 0.5em;
+}
+
 /* SMALL SCREEN */
 
 @media (max-width: 50em) {
-    #form-center {
-        align-items: center;
-    }
-    .container {
-        width: 480px;
-    }
-    .container form {
-        width: 480px;
-        left: 0;
-        top: 30px;
-    }
-    input {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        border-bottom: 1px solid var(--clr-deep-purple);
-        font-family: var(--ff-body);
-        background-color: var(--clr-paper);
-        max-width: 350px;
-        min-width: 350px;
-        max-height: 35px;
-        min-height: 35px;
-        margin-bottom: 30px;
-        font-weight: 400;
-    }
-    .input-info {
-        max-width: 350px;
-    }
-    textarea {
-        max-width: 350px;
-    }
-    .center-input {
-        justify-content: center;
-        align-items: center;
-    }
     .form-title {
         font-size: 1.3rem;
     }
     #state-zip {
         flex-direction: column;
         gap: 0;
-    }
-    #state-zip input {
-        max-width: 350px;
-        min-width: 350px;
     }
 }

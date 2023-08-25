@@ -1,56 +1,79 @@
 // ADOPTION FORMS JAVASCRIPT FILES
 
-var form1 = document.getElementById('form1');
-var form2 = document.getElementById('form2');
-var form3 = document.getElementById('form3');
-var form4 = document.getElementById('form4');
-var form5 = document.getElementById('form5');
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the current tab
 
-var nextFirstPage = document.getElementById('next-first-page');
-var nextSecondPage = document.getElementById('next-second-page');
-var nextThirdPage = document.getElementById('next-third-page');
-var nextFourthPage = document.getElementById('next-fourth-page');
-var backSecondPage = document.getElementById('back-second-page');
-var backThirdPage = document.getElementById('back-third-page');
-var backFourthPage = document.getElementById('back-fourth-page');
-var backFifthPage = document.getElementById('back-fifth-page');
+function showTab(n) {
+    // This function will display the specified tab of the form ...
+    var x = document.getElementsByClassName('tab');
+    x[n].style.display = 'block';
+    // ... and fix the Previous/Next buttons:
+    if (n == 0) {
+        document.getElementById('prevBtn').style.display = 'none';
+    } else {
+        document.getElementById('prevBtn').style.display = 'inline';
+    }
+    if (n == x.length - 1) {
+        document.getElementById('nextBtn').innerHTML = 'Submit';
+    } else {
+        document.getElementById('nextBtn').innerHTML = 'Next';
+    }
+    // ... and run a function that displays the correct step indicator:
+    fixStepIndicator(n);
+}
 
-nextFirstPage.onclick = function () {
-    form1.style.left = '-750px';
-    form2.style.left = '0px';
-};
+function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName('tab');
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = 'none';
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form... :
+    if (currentTab >= x.length) {
+        //...the form gets submitted:
+        document.getElementById('regForm').submit();
+        return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+}
 
-nextSecondPage.onclick = function () {
-    form2.style.left = '-750px';
-    form3.style.left = '0px';
-};
+function validateForm() {
+    // This function deals with validation of the form fields
+    var x,
+        y,
+        i,
+        valid = true;
+    x = document.getElementsByClassName('tab');
+    y = x[currentTab].getElementsByTagName('input');
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == '') {
+            // add an "invalid" class to the field:
+            y[i].className += ' invalid';
+            // and set the current valid status to false:
+            valid = false;
+        }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+        document.getElementsByClassName('step')[currentTab].className +=
+            ' finish';
+    }
+    return valid; // return the valid status
+}
 
-nextThirdPage.onclick = function () {
-    form3.style.left = '-750px';
-    form4.style.left = '0px';
-};
-
-nextFourthPage.onclick = function () {
-    form4.style.left = '-750px';
-    form5.style.left = '0px';
-};
-
-backSecondPage.onclick = function () {
-    form1.style.left = '0px';
-    form2.style.left = '750px';
-};
-
-backThirdPage.onclick = function () {
-    form2.style.left = '0px';
-    form3.style.left = '750px';
-};
-
-backFourthPage.onclick = function () {
-    form3.style.left = '0px';
-    form4.style.left = '750px';
-};
-
-backFifthPage.onclick = function () {
-    form4.style.left = '0px';
-    form5.style.left = '750px';
-};
+function fixStepIndicator(n) {
+    // This function removes the "active" class of all steps...
+    var i,
+        x = document.getElementsByClassName('step');
+    for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(' active', '');
+    }
+    //... and adds the "active" class to the current step:
+    x[n].className += ' active';
+}
