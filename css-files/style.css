@@ -618,3 +618,13 @@ footer {
 ::-webkit-scrollbar-corner {
     background: var(--clr-paper);
 }
+
+/* LARGE SCREEN ADJUSTMENTS */
+@media (min-width: 95em) {
+    #header-content-top,
+    #header-list,
+    #footer-list {
+        max-width: 1552px;
+        margin-left: 15%;
+    }
+}
