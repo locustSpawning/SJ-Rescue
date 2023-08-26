@@ -11,13 +11,6 @@
     align-self: center;
 }
 
-#new-account-container {
-    background-color: var(--clr-paper);
-    margin: 200px;
-    padding-top: 55px;
-    box-shadow: var(--smaller-shadow);
-}
-
 #thankyou-new-account {
     padding-bottom: 50px;
 }
@@ -40,6 +33,12 @@
 
 #new-account-form {
     padding: 30px 150px 150px;
+    background-color: var(--clr-paper);
+    padding-top: 55px;
+    box-shadow: var(--smaller-shadow);
+    min-width: 580px;
+    max-width: 1300px;
+    margin-top: 3em;
 }
 
 #password-form {
