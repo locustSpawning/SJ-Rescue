@@ -1,5 +1,6 @@
 //PERSONAL INFORMATION
 
+//SHOW PASSWORDS
 function showPassword() {
     console.log('huh');
     var x = document.getElementsByClassName('myPassword');
@@ -11,5 +12,16 @@ function showPassword() {
         } else {
             x[item].type = 'password';
         }
+    }
+}
+
+//CHECK PASSWORDS MATCH
+function check() {
+    var input = document.getElementById('password_confirm');
+    if (input.value != document.getElementById('password').value) {
+        input.setCustomValidity('Password Must be Matching.');
+    } else {
+        // input is valid -- reset the error message
+        input.setCustomValidity('');
     }
 }
