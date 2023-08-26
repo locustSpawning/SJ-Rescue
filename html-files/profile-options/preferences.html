@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SJ Rescue</title>
+        <script defer src="../../js-files/main.js"></script>
+
+        <script
+            src="https://kit.fontawesome.com/38a8b83142.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../../css-files/style.css" />
+        <link rel="stylesheet" href="../../css-files/preference.css" />
+        <link rel="icon" href="../../images/paw-print.png" type="icon" />
+    </head>
+    <body>
+        <header id="small-screen-header">
+            <div id="margin-container">
+                <a href="../index.html"
+                    ><img
+                        id="header-logo"
+                        src="../../images/paw-print.png"
+                        alt="SJ Rescue"
+                /></a>
+                <a href="#"
+                    ><img class="menu-button" src="../../images/menu.png"
+                /></a>
+            </div>
+        </header>
+
+        <section id="drop-down-menu" style="display: none">
+            <div id="small-menu-dropdown">
+                <ul role="list" id="mini-list">
+                    <li>
+                        <a href="../index.html" class="text-slate-500-reg"
+                            >•HOME</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="../adoption-forms.html"
+                            class="text-slate-500-reg"
+                            >•ADOPTION<br />
+                            & FOSTER<br />
+                            FORMS</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="../animals-available.html"
+                            class="text-slate-500-reg"
+                            >•ANIMALS</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../contact.html" class="text-slate-500-reg"
+                            >•CONTACT</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../donate.html" class="text-slate-500-reg"
+                            >•DONATE</a
+                        >
+                    </li>
+                    <a href="../profile-page.html" class="text-slate-500-reg"
+                            >-MY PROFILE-</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <header class="header">
+            <div id="header-section-1">
+                <div id="header-content-top">
+                    <div id="header-section-1-left">
+                        <a href="index.html"
+                            ><img
+                                id="header-logo"
+                                src="../../images/paw-print.png"
+                                alt="SJ Rescue"
+                        /></a>
+                        <div id="text-logo-grid">
+                            <h2 class="text-main-title-500-bold">
+                                South Jersey Rescue
+                            </h2>
+                            <h3 class="text-main-400">
+                                Adopt. Foster. Volunteer.
+                            </h3>
+                        </div>
+                    </div>
+
+                    <a href="../profile-page.html"
+                        ><img
+                            id="header-profile"
+                            src="../../images/profile5.png"
+                    /></a>
+                </div>
+            </div>
+            <div id="header-section-2">
+                <ul id="header-list" class="text-main-400">
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../adoption-forms.html"
+                            >Adoption | Foster Forms</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../animals-available.html"
+                            >Animals</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="header-link text-main-400"
+                            href="../contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                    <li>
+                        <button
+                            id="donate-button-header"
+                            class="text-paper-400-bold"
+                            onclick="window.location.href='../donate.html'"
+                            ,
+                        >
+                            Donate
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="email-options">
+            <div class="container">
+                <form id="pref-form">
+                    <h1 class="form-title text-main-title-500-bold">My Preferences</h1>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques1" name="ques1" value="news">
+                        <label for="ques1">Receive alert when News is added</label>
+                    </div>
+
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques2" name="ques2" value="events">
+                        <label for="ques2">Receive alert when Events are added</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques3" name="ques3" value="email">
+                        <label for="ques3">Allow SJ Rescue to send me emails</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques4" name="ques4" value="mail">
+                        <label for="ques4">Allow SJ Rescue to send me snail mail</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques5" name="ques5" value="call">
+                        <label for="ques5">Allow SJ Rescue to call me</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques6" name="ques6" value="breed">
+                        <label for="ques6">Get alerts when your favorite <b>breed</b> is added</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques7" name="ques7" value="animal">
+                        <label for="ques7">Get alerts when your favorite <b>animal</b> is updated</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques8" name="ques8" value="never">
+                        <label for="ques8">Never send me any emails</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques9" name="ques9" value="rescue-groups">
+                        <label for="ques9">Allow RescueGroups to email me</label>
+                    </div>
+                    
+                    <button type="submit">Save Options</button>
+                
+                </form>
+            </div>
+            
+        </section>
+
+        <!-- back to top -->
+        <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
+        <footer>
+            <ul id="footer-list" class="text-slate-400-bold">
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../index.html"
+                        >Home</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../adoption-forms.html"
+                        >Adoption | Foster Forms</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../animals-available.html"
+                        >Animals</a
+                    >
+                </li>
+                <li>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../contact.html"
+                        >Contact</a
+                    >
+                </li>
+            </ul>
+            <div id="stay-connected-footer">
+                <p class="text-slate-400-bold" id="stay-connected-text">
+                    Stay Connected!
+                </p>
+                <div id="footer-facebook-insta-links">
+                    <a
+                        href="https://www.facebook.com/southjerseyrescue/"
+                        target="_blank"
+                        ><img
+                            class="footer-image"
+                            src="../../images/facebook.png"
+                    /></a>
+                    <a
+                        href="https://www.instagram.com/south_jersey_rescue/"
+                        target="_blank"
+                        ><img
+                            class="footer-image"
+                            src="../../images/instagram (2).png"
+                    /></a>
+                </div>
+            </div>
+
+            <div id="footer-end-tag">
+                <a id="footer-final-note" class="text-paper-400-bold"
+                    >SJ Rescue ©
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    <img
+                        id="footer-logo"
+                        src="../../images/paw-print.png"
+                        alt="SJ Rescue"
+                    />
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

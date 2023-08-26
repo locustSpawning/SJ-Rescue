@@ -1,0 +1,80 @@
+/* PREFERENCES -- PROFILE INFO */
+
+.container {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.form-title {
+    margin-bottom: 30px;
+}
+
+#pref-form {
+    padding: 150px 150px 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-family: var(--ff-body);
+    border: 1px solid #aaaaaa;
+    background-color: var(--clr-paper);
+    color: var(--clr-deep-purple);
+    margin-bottom: 30px;
+    font-weight: 500;
+    border: 0;
+    border-bottom: 1px solid var(--clr-deep-purple);
+}
+
+label {
+    color: var(--clr-deep-purple);
+    font-family: var(--ff-body);
+    font-size: var(--fs-400);
+}
+
+.tab {
+    max-width: 450px;
+    text-align: start;
+}
+
+.checkbox {
+    width: 100%;
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    margin: 0;
+}
+
+form button {
+    width: 150px;
+    height: 45px;
+    margin: 30px 20px 0;
+    background-color: var(--clr-deep-purple);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+form button:hover {
+    background-color: var(--clr-berry);
+    border-color: var(--clr-berry);
+}
+
+.check-options {
+    margin: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}

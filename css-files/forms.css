@@ -60,7 +60,6 @@ input.invalid {
 /* Hide all steps by default: */
 .tab {
     display: none;
-
     max-width: 450px;
     text-align: start;
 }

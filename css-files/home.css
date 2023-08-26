@@ -46,14 +46,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 12em;
+    height: 17em;
     background-image: linear-gradient(var(--clr-stone), var(--clr-slate));
     box-shadow: var(--smaller-shadow);
 }
 
 #events-title {
     text-align: center;
-    padding-top: 10rem;
+    padding-top: 5rem;
+}
+
+/* FEED */
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 2em 3em;
+}
+.feed-announcement {
+    background-color: var(--clr-paper);
+    max-width: 600px;
+    min-width: 600px;
+    border-radius: 7px;
+    padding: 1em 3em 1em;
+    margin: 1em;
 }
 
 /* CALENDAR */
