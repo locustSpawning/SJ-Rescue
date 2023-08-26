@@ -14,8 +14,10 @@
     margin-bottom: 30px;
 }
 
-#pref-form {
-    padding: 150px 150px 300px;
+#pref-form,
+#info-form,
+#password-form {
+    padding: 150px 150px 200px;
 
     display: flex;
     flex-direction: column;
@@ -24,13 +26,17 @@
     align-content: center;
 }
 
+#password-form {
+    padding-top: 0px;
+}
+
 input {
     padding: 10px;
     width: 100%;
     font-size: 20px;
     font-family: var(--ff-body);
     border: 1px solid #aaaaaa;
-    background-color: var(--clr-paper);
+    background-color: transparent;
     color: var(--clr-deep-purple);
     margin-bottom: 30px;
     font-weight: 500;
@@ -77,4 +83,11 @@ form button:hover {
     justify-content: flex-start;
     align-items: center;
     gap: 1em;
+}
+
+/* Remove number scrollers*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
