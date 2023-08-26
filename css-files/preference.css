@@ -1,6 +1,7 @@
 /* PREFERENCES -- PROFILE INFO */
 
-.container {
+.container,
+#new-account-container {
     gap: 1em;
     display: flex;
     flex-direction: column;
@@ -10,20 +11,35 @@
     align-self: center;
 }
 
+#new-account-container {
+    background-color: var(--clr-paper);
+    margin: 200px;
+    padding-top: 55px;
+    box-shadow: var(--smaller-shadow);
+}
+
+#thankyou-new-account {
+    padding-bottom: 50px;
+}
+
 .form-title {
     margin-bottom: 30px;
 }
 
 #pref-form,
 #info-form,
-#password-form {
+#password-form,
+#new-account-form {
     padding: 150px 150px 200px;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     align-content: center;
+}
+
+#new-account-form {
+    padding: 30px 150px 150px;
 }
 
 #password-form {
