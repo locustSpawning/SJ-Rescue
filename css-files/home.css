@@ -67,8 +67,8 @@
 }
 .feed-announcement {
     background-color: var(--clr-paper);
-    max-width: 600px;
-    min-width: 600px;
+    max-width: 500px;
+    min-width: 500px;
     border-radius: 7px;
     padding: 1em 3em 1em;
     margin: 1em;

@@ -68,3 +68,8 @@ a {
 #sponsorship1 {
     margin-top: 0.7em;
 }
+
+#create-account-button {
+    min-width: 200px;
+    margin-left: 0;
+}
