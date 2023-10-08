@@ -4,15 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
-        <script defer src="../../js-files/main.js"></script>
+        <script defer src="../js-files/main.js"></script>
+        <script defer src="../js-files/forms-scripts/personal-info.js"></script>
 
         <script
             src="https://kit.fontawesome.com/38a8b83142.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="../../css-files/style.css" />
-        <link rel="stylesheet" href="../../css-files/preference.css" />
-        <link rel="icon" href="../../images/paw-print.png" type="icon" />
+        <link rel="stylesheet" href="../css-files/style.css" />
+        <link rel="stylesheet" href="../css-files/preference.css" />
+        <link rel="icon" href="../images/paw-print.png" type="icon" />
     </head>
     <body>
         <header id="small-screen-header">
@@ -20,11 +21,11 @@
                 <a href="../index.html"
                     ><img
                         id="header-logo"
-                        src="../../images/paw-print.png"
+                        src="../images/paw-print.png"
                         alt="SJ Rescue"
                 /></a>
                 <a href="#"
-                    ><img class="menu-button" src="../../images/menu.png"
+                    ><img class="menu-button" src="../images/menu.png"
                 /></a>
             </div>
         </header>
@@ -78,7 +79,7 @@
                         <a href="../index.html"
                             ><img
                                 id="header-logo"
-                                src="../../images/paw-print.png"
+                                src="../images/paw-print.png"
                                 alt="SJ Rescue"
                         /></a>
                         <div id="text-logo-grid">
@@ -94,7 +95,7 @@
                     <a href="../profile-page.html"
                         ><img
                             id="header-profile"
-                            src="../../images/profile5.png"
+                            src="../images/profile5.png"
                     /></a>
                 </div>
             </div>
@@ -142,57 +143,92 @@
             </div>
         </header>
 
-        <section id="email-options">
+        <section id="personal-info">
             <div class="container">
-                <form id="pref-form">
-                    <h1 class="form-title text-main-title-500-bold">My Preferences</h1>
+                <form id="info-form">
+                    <h1 class="form-title text-main-title-500-bold">My Information</h1>
+                    <label for="question1"
+                            >First name: </label
+                        >
+                    <input type="text"  id="myInput">
+
+                    <label for="question2"
+                        >Last name: </label
+                    >
+                    <input type="text"  id="myInput">
+
+                    <label for="question3"
+                        >Address: </label
+                    >
+                    <input type="text"  id="myInput">
+
+                    <label for="question4"
+                        >City: </label
+                    >
+                    <input type="text"  id="myInput">
+
+                    <label for="question5"
+                        >State: </label
+                    >
+                    <input type="text"  id="myInput">
+
+                    <label for="question6"
+                        >Zip code: </label
+                    >
+                    <input type="number"  id="myInput">
+
+                    <label for="question7"
+                        >Country: </label
+                    >
+                    <input type="text"  id="myInput">
+
+                    <label for="question8"
+                        >Phone number 1: </label
+                    >
+                    <input type="number"  id="myInput">
+
+                    <label for="question9"
+                        >Phone number 2: </label
+                    >
+                    <input type="number"  id="myInput">
+
+                    <label for="question10"
+                        >Email: </label
+                    >
+                    <input type="email"  id="myInput">
                     
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques1" name="ques1" value="news">
-                        <label for="ques1">Receive alert when News is added</label>
-                    </div>
+                    
+                    <button type="submit">Save </button>
+                
+                </form>
+
+                <form id="password-form">
+                    <h1 class="form-title text-main-title-500-bold">Change Password</h1>
+                    <label for="question1"
+                            >Current Password: </label
+                        >
+                    <input type="password"  class="myPassword">
+
+                    <label for="question2"
+                        >New Password: </label
+                    >
+                    <input type="password"  class="myPassword" id="password" oninput="check()">
+
+
+                    <label for="question3"
+                        >Confirm New Password: </label
+                    >
+                    <input type="password"  class="myPassword" id="password_confirm" oninput="check()">
 
                     <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques2" name="ques2" value="events">
-                        <label for="ques2">Receive alert when Events are added</label>
+                        <input class="checkbox check-text" type="checkbox" onclick="showPassword()">
+                        <label for="question-check"
+                        >Show Password </label
+                    >
                     </div>
                     
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques3" name="ques3" value="email">
-                        <label for="ques3">Allow SJ Rescue to send me emails</label>
-                    </div>
                     
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques4" name="ques4" value="mail">
-                        <label for="ques4">Allow SJ Rescue to send me snail mail</label>
-                    </div>
-                    
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques5" name="ques5" value="call">
-                        <label for="ques5">Allow SJ Rescue to call me</label>
-                    </div>
-                    
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques6" name="ques6" value="breed">
-                        <label for="ques6">Get alerts when your favorite <b>breed</b> is added</label>
-                    </div>
-                    
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques7" name="ques7" value="animal">
-                        <label for="ques7">Get alerts when your favorite <b>animal</b> is updated</label>
-                    </div>
-                    
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques8" name="ques8" value="never">
-                        <label for="ques8">Never send me any emails</label>
-                    </div>
-                    
-                    <div class="check-options">
-                        <input class="checkbox" type="checkbox" id="ques9" name="ques9" value="rescue-groups">
-                        <label for="ques9">Allow RescueGroups to email me</label>
-                    </div>
-                    
-                    <button type="submit">Save Options</button>
+                    <button type="submit">Save </button>
                 
                 </form>
             </div>
@@ -242,14 +278,14 @@
                         target="_blank"
                         ><img
                             class="footer-image"
-                            src="../../images/facebook.png"
+                            src="../images/facebook.png"
                     /></a>
                     <a
                         href="https://www.instagram.com/south_jersey_rescue/"
                         target="_blank"
                         ><img
                             class="footer-image"
-                            src="../../images/instagram (2).png"
+                            src="../images/instagram (2).png"
                     /></a>
                 </div>
             </div>
@@ -262,7 +298,7 @@
                     </script>
                     <img
                         id="footer-logo"
-                        src="../../images/paw-print.png"
+                        src="../images/paw-print.png"
                         alt="SJ Rescue"
                     />
                 </a>

@@ -4,14 +4,15 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
-        <script defer src="../js-files/main.js"></script>
+        <script defer src="js-files/main.js"></script>
+        <script defer src="js-files/animal-profile.js"></script>
         <script
             src="https://kit.fontawesome.com/38a8b83142.js"
             crossorigin="anonymous"
         ></script>
-        <link rel="stylesheet" href="../css-files/style.css" />
-        <link rel="stylesheet" href="../css-files/contact.css" />
-        <link rel="icon" href="../images/paw-print.png" type="icon" />
+        <link rel="stylesheet" href="css-files/style.css" />
+        <link rel="stylesheet" href="css-files/animal-profile.css" />
+        <link rel="icon" href="images/paw-print.png" type="icon" />
     </head>
     <body>
         <header id="small-screen-header">
@@ -19,11 +20,11 @@
                 <a href="index.html"
                     ><img
                         id="header-logo"
-                        src="../images/paw-print.png"
+                        src="images/paw-print.png"
                         alt="SJ Rescue"
                 /></a>
                 <a href="#"
-                    ><img class="menu-button" src="../images/menu.png"
+                    ><img class="menu-button" src="images/menu.png"
                 /></a>
             </div>
         </header>
@@ -51,7 +52,9 @@
                         >
                     </li>
                     <li>
-                        <p class="current-page-drop-down">•CONTACT</p>
+                        <a href="contact.html" class="text-slate-500-reg"
+                            >•CONTACT</a
+                        >
                     </li>
                     <li>
                         <a href="donate.html" class="text-slate-500-reg"
@@ -73,7 +76,7 @@
                         <a href="index.html"
                             ><img
                                 id="header-logo"
-                                src="../images/paw-print.png"
+                                src="images/paw-print.png"
                                 alt="SJ Rescue"
                         /></a>
                         <div id="text-logo-grid">
@@ -87,7 +90,7 @@
                     </div>
 
                     <a href="profile-page.html"
-                        ><img id="header-profile" src="../images/profile5.png"
+                        ><img id="header-profile" src="images/profile5.png"
                     /></a>
                 </div>
             </div>
@@ -113,9 +116,7 @@
                         >
                     </li>
                     <li>
-                        <a
-                            class="header-link text-main-400 current-page"
-                            href="#"
+                        <a class="header-link text-main-400" href="contact.html"
                             >Contact</a
                         >
                     </li>
@@ -133,50 +134,114 @@
             </div>
         </header>
 
-        <section id="main-content-contact">
-            <div id="address">
-                <h1 class="text-main-title-600-semi-bold">Contact Us</h1>
-                <p class="text-main-400">
-                    South Jersey Rescue <br />
-                    102 S Market St. <br />
-                    Gibbstown, NJ 08027
-                </p>
-            </div>
+        <section id="pet-id" aria-label="pet-photos">
+            <h1 class="text-main-title-500-reg">Animal Name</h1>
 
-            <div id="social-media">
-                <h1 class="text-main-title-600-semi-bold">Stay Connected!</h1>
-                <p class="text-main-400">
-                    Follow us for updates on events, adoptions, and more!
-                </p>
-                <div id="social-media-links-stay-connected">
-                    <a
-                        href="https://www.facebook.com/southjerseyrescue/"
-                        target="_blank"
-                        ><img
-                            class="social-media-images"
-                            src="../images/facebook.png"
-                    /></a>
-                    <a
-                        href="https://www.instagram.com/south_jersey_rescue/"
-                        target="_blank"
-                        ><img
-                            class="social-media-images"
-                            src="../images/instagram (2).png"
-                    /></a>
+            <div class="carousel">
+                <!-- previous button -->
+                <button class="carousel-button carousel-button--left is-hidden">
+                    <img src="images/next.png" alt="previous" />
+                </button>
+
+                <!-- carousel -->
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide" data-active>
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-1"
+                                src="images/animals/piccolo.jpg"
+                            />
+                        </li>
+                        <li class="carousel__slide">
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-2"
+                                src="images/animals/phoebe.jpg"
+                            />
+                        </li>
+                        <li class="carousel__slide">
+                            <img
+                                class="carousel-image"
+                                alt="pet-image-3"
+                                src="images/animals/flick.jpg"
+                            />
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- next button -->
+                <button class="carousel-button carousel-button--right">
+                    <img src="images/next.png" alt="next" />
+                </button>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button
+                    ><button class="carousel__indicator"></button
+                    ><button class="carousel__indicator"></button>
                 </div>
             </div>
 
-            <div id="email-info">
-                <h1 class="text-main-title-600-semi-bold">Email</h1>
-                <p class="text-main-400">admin@southjerseyrescue.com</p>
+            <div id="looking-to-adopt">
+                <p class="text-main-400">
+                    Looking to adopt? <br />
+                    Fill out a form
+                    <a
+                        class="text-highlight-bold-400"
+                        href="Forms-html/adopt-form.html"
+                        >here!</a
+                    >
+                </p>
             </div>
+        </section>
 
-            <div id="phone-number">
-                <h1 class="text-main-title-600-semi-bold">Phone</h1>
-                <p class="text-main-400">(609) 314-4664</p>
+        <section id="pet-info">
+            <div id="text-pet-info">
+                <div id="fav-buttons">
+                    <button
+                        onclick="ToggleHeart()"
+                        class="favorites-button"
+                        id="heart-btn1"
+                    >
+                        <img
+                            id="blank-heart-animal"
+                            src="images/heart.png"
+                        />
+                        <span>Favorite Animal Name</span>
+                    </button>
+                    <button onclick="ToggleHeart2()" class="favorites-button">
+                        <img
+                            id="blank-heart-species"
+                            src="images/heart.png"
+                        /><span>Favorite Species</span>
+                    </button>
+                </div>
+
+                <ul id="pet-details">
+                    <li class="text-main-bold-400">
+                        Status: Available for adoption
+                    </li>
+                    <li class="text-main-bold-400">Species: Tabby</li>
+                    <li class="text-main-bold-400">Rescue ID: 23-0037</li>
+                    <li class="text-main-bold-400">
+                        Current Age: 3 Months 7 Days (best estimate)
+                    </li>
+                </ul>
+
+                <h1 class="text-main-title-500-reg" id="about-title">About</h1>
+                <p class="text-main-400" id="animal-descriptive-paragraph">
+                    This will be a short paragraph about each animal...This
+                    animal is so cute and sweet and needs a home. Please
+                    consider adopting me.
+                </p>
             </div>
-
-            <img id="sleepy-cat" src="../images/contact-kitty.png" />
+            <button
+                id="back-to-animals"
+                class="text-paper-400-bold"
+                onclick="window.location.href='animals-available.html'"
+                ,
+            >
+                Back to Animals
+            </button>
         </section>
 
         <!-- back to top -->
@@ -185,9 +250,7 @@
         <footer>
             <ul id="footer-list" class="text-slate-400-bold">
                 <li>
-                    <a class="footer-link text-slate-400-bold" href="index.html"
-                        >Home</a
-                    >
+                    <a class="footer-link text-slate-400-bold" href="#">Home</a>
                 </li>
                 <li>
                     <a
@@ -204,7 +267,9 @@
                     >
                 </li>
                 <li>
-                    <a class="footer-link text-slate-400-bold" href="#"
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="contact.html"
                         >Contact</a
                     >
                 </li>
@@ -217,14 +282,14 @@
                     <a
                         href="https://www.facebook.com/southjerseyrescue/"
                         target="_blank"
-                        ><img class="footer-image" src="../images/facebook.png"
+                        ><img class="footer-image" src="images/facebook.png"
                     /></a>
                     <a
                         href="https://www.instagram.com/south_jersey_rescue/"
                         target="_blank"
                         ><img
                             class="footer-image"
-                            src="../images/instagram (2).png"
+                            src="images/instagram (2).png"
                     /></a>
                 </div>
             </div>
@@ -237,7 +302,7 @@
                     </script>
                     <img
                         id="footer-logo"
-                        src="../images/paw-print.png"
+                        src="images/paw-print.png"
                         alt="SJ Rescue"
                     />
                 </a>

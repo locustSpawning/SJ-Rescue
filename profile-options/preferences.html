@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="../js-files/main.js"></script>
-        <script defer src="../js-files/animal-profile.js"></script>
+
         <script
             src="https://kit.fontawesome.com/38a8b83142.js"
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="../css-files/style.css" />
-        <link rel="stylesheet" href="../css-files/animal-profile.css" />
+        <link rel="stylesheet" href="../css-files/preference.css" />
         <link rel="icon" href="../images/paw-print.png" type="icon" />
     </head>
     <body>
         <header id="small-screen-header">
             <div id="margin-container">
-                <a href="index.html"
+                <a href="../index.html"
                     ><img
                         id="header-logo"
                         src="../images/paw-print.png"
@@ -33,12 +33,14 @@
             <div id="small-menu-dropdown">
                 <ul role="list" id="mini-list">
                     <li>
-                        <a href="index.html" class="text-slate-500-reg"
+                        <a href="../index.html" class="text-slate-500-reg"
                             >•HOME</a
                         >
                     </li>
                     <li>
-                        <a href="adoption-forms.html" class="text-slate-500-reg"
+                        <a
+                            href="../adoption-forms.html"
+                            class="text-slate-500-reg"
                             >•ADOPTION<br />
                             & FOSTER<br />
                             FORMS</a
@@ -46,22 +48,22 @@
                     </li>
                     <li>
                         <a
-                            href="animals-available.html"
+                            href="../animals-available.html"
                             class="text-slate-500-reg"
                             >•ANIMALS</a
                         >
                     </li>
                     <li>
-                        <a href="contact.html" class="text-slate-500-reg"
+                        <a href="../contact.html" class="text-slate-500-reg"
                             >•CONTACT</a
                         >
                     </li>
                     <li>
-                        <a href="donate.html" class="text-slate-500-reg"
+                        <a href="../donate.html" class="text-slate-500-reg"
                             >•DONATE</a
                         >
                     </li>
-                    <a href="profile-page.html" class="text-slate-500-reg"
+                    <a href="../profile-page.html" class="text-slate-500-reg"
                             >-MY PROFILE-</a
                         >
                     </li>
@@ -73,7 +75,7 @@
             <div id="header-section-1">
                 <div id="header-content-top">
                     <div id="header-section-1-left">
-                        <a href="index.html"
+                        <a href="../index.html"
                             ><img
                                 id="header-logo"
                                 src="../images/paw-print.png"
@@ -89,34 +91,40 @@
                         </div>
                     </div>
 
-                    <a href="profile-page.html"
-                        ><img id="header-profile" src="../images/profile5.png"
+                    <a href="../profile-page.html"
+                        ><img
+                            id="header-profile"
+                            src="../images/profile5.png"
                     /></a>
                 </div>
             </div>
             <div id="header-section-2">
                 <ul id="header-list" class="text-main-400">
                     <li>
-                        <a class="header-link text-main-400" href="index.html"
+                        <a
+                            class="header-link text-main-400"
+                            href="../index.html"
                             >Home</a
                         >
                     </li>
                     <li>
                         <a
                             class="header-link text-main-400"
-                            href="adoption-forms.html"
+                            href="../adoption-forms.html"
                             >Adoption | Foster Forms</a
                         >
                     </li>
                     <li>
                         <a
                             class="header-link text-main-400"
-                            href="animals-available.html"
+                            href="../animals-available.html"
                             >Animals</a
                         >
                     </li>
                     <li>
-                        <a class="header-link text-main-400" href="contact.html"
+                        <a
+                            class="header-link text-main-400"
+                            href="../contact.html"
                             >Contact</a
                         >
                     </li>
@@ -124,7 +132,7 @@
                         <button
                             id="donate-button-header"
                             class="text-paper-400-bold"
-                            onclick="window.location.href='donate.html'"
+                            onclick="window.location.href='../donate.html'"
                             ,
                         >
                             Donate
@@ -134,142 +142,92 @@
             </div>
         </header>
 
-        <section id="pet-id" aria-label="pet-photos">
-            <h1 class="text-main-title-500-reg">Animal Name</h1>
+        <section id="email-options">
+            <div class="container">
+                <form id="pref-form">
+                    <h1 class="form-title text-main-title-500-bold">My Preferences</h1>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques1" name="ques1" value="news">
+                        <label for="ques1">Receive alert when News is added</label>
+                    </div>
 
-            <div class="carousel">
-                <!-- previous button -->
-                <button class="carousel-button carousel-button--left is-hidden">
-                    <img src="../images/next.png" alt="previous" />
-                </button>
-
-                <!-- carousel -->
-                <div class="carousel__track-container">
-                    <ul class="carousel__track">
-                        <li class="carousel__slide current-slide" data-active>
-                            <img
-                                class="carousel-image"
-                                alt="pet-image-1"
-                                src="../images/animals/piccolo.jpg"
-                            />
-                        </li>
-                        <li class="carousel__slide">
-                            <img
-                                class="carousel-image"
-                                alt="pet-image-2"
-                                src="../images/animals/phoebe.jpg"
-                            />
-                        </li>
-                        <li class="carousel__slide">
-                            <img
-                                class="carousel-image"
-                                alt="pet-image-3"
-                                src="../images/animals/flick.jpg"
-                            />
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- next button -->
-                <button class="carousel-button carousel-button--right">
-                    <img src="../images/next.png" alt="next" />
-                </button>
-                <div class="carousel__nav">
-                    <button class="carousel__indicator current-slide"></button
-                    ><button class="carousel__indicator"></button
-                    ><button class="carousel__indicator"></button>
-                </div>
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques2" name="ques2" value="events">
+                        <label for="ques2">Receive alert when Events are added</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques3" name="ques3" value="email">
+                        <label for="ques3">Allow SJ Rescue to send me emails</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques4" name="ques4" value="mail">
+                        <label for="ques4">Allow SJ Rescue to send me snail mail</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques5" name="ques5" value="call">
+                        <label for="ques5">Allow SJ Rescue to call me</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques6" name="ques6" value="breed">
+                        <label for="ques6">Get alerts when your favorite <b>breed</b> is added</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques7" name="ques7" value="animal">
+                        <label for="ques7">Get alerts when your favorite <b>animal</b> is updated</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques8" name="ques8" value="never">
+                        <label for="ques8">Never send me any emails</label>
+                    </div>
+                    
+                    <div class="check-options">
+                        <input class="checkbox" type="checkbox" id="ques9" name="ques9" value="rescue-groups">
+                        <label for="ques9">Allow RescueGroups to email me</label>
+                    </div>
+                    
+                    <button type="submit">Save Options</button>
+                
+                </form>
             </div>
-
-            <div id="looking-to-adopt">
-                <p class="text-main-400">
-                    Looking to adopt? <br />
-                    Fill out a form
-                    <a
-                        class="text-highlight-bold-400"
-                        href="Forms-html/adopt-form.html"
-                        >here!</a
-                    >
-                </p>
-            </div>
-        </section>
-
-        <section id="pet-info">
-            <div id="text-pet-info">
-                <div id="fav-buttons">
-                    <button
-                        onclick="ToggleHeart()"
-                        class="favorites-button"
-                        id="heart-btn1"
-                    >
-                        <img
-                            id="blank-heart-animal"
-                            src="../images/heart.png"
-                        />
-                        <span>Favorite Animal Name</span>
-                    </button>
-                    <button onclick="ToggleHeart2()" class="favorites-button">
-                        <img
-                            id="blank-heart-species"
-                            src="../images/heart.png"
-                        /><span>Favorite Species</span>
-                    </button>
-                </div>
-
-                <ul id="pet-details">
-                    <li class="text-main-bold-400">
-                        Status: Available for adoption
-                    </li>
-                    <li class="text-main-bold-400">Species: Tabby</li>
-                    <li class="text-main-bold-400">Rescue ID: 23-0037</li>
-                    <li class="text-main-bold-400">
-                        Current Age: 3 Months 7 Days (best estimate)
-                    </li>
-                </ul>
-
-                <h1 class="text-main-title-500-reg" id="about-title">About</h1>
-                <p class="text-main-400" id="animal-descriptive-paragraph">
-                    This will be a short paragraph about each animal...This
-                    animal is so cute and sweet and needs a home. Please
-                    consider adopting me.
-                </p>
-            </div>
-            <button
-                id="back-to-animals"
-                class="text-paper-400-bold"
-                onclick="window.location.href='animals-available.html'"
-                ,
-            >
-                Back to Animals
-            </button>
+            
         </section>
 
         <!-- back to top -->
         <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
-
         <footer>
             <ul id="footer-list" class="text-slate-400-bold">
                 <li>
-                    <a class="footer-link text-slate-400-bold" href="#">Home</a>
+                    <a
+                        class="footer-link text-slate-400-bold"
+                        href="../index.html"
+                        >Home</a
+                    >
                 </li>
                 <li>
                     <a
                         class="footer-link text-slate-400-bold"
-                        href="adoption-forms.html"
+                        href="../adoption-forms.html"
                         >Adoption | Foster Forms</a
                     >
                 </li>
                 <li>
                     <a
                         class="footer-link text-slate-400-bold"
-                        href="animals-available.html"
+                        href="../animals-available.html"
                         >Animals</a
                     >
                 </li>
                 <li>
                     <a
                         class="footer-link text-slate-400-bold"
-                        href="contact.html"
+                        href="../contact.html"
                         >Contact</a
                     >
                 </li>
@@ -282,7 +240,9 @@
                     <a
                         href="https://www.facebook.com/southjerseyrescue/"
                         target="_blank"
-                        ><img class="footer-image" src="../images/facebook.png"
+                        ><img
+                            class="footer-image"
+                            src="../images/facebook.png"
                     /></a>
                     <a
                         href="https://www.instagram.com/south_jersey_rescue/"
