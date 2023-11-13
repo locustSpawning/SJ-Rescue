@@ -5,20 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SJ Rescue</title>
         <script defer src="js-files/main.js"></script>
-        <script defer src="js-files/animal-profile.js"></script>
         <script
             src="https://kit.fontawesome.com/38a8b83142.js"
             crossorigin="anonymous"
         ></script>
         <link rel="stylesheet" href="css-files/style.css" />
-        <link rel="stylesheet" href="css-files/animal-profile.css" />
+        <!-- <link rel="stylesheet" href="css-files/home.css" /> -->
+        <link rel="stylesheet" href="css-files/forms.css" />
+        <link rel="stylesheet" href="css-files/adoption-form.css" />
         <link rel="icon" href="images/paw-print.png" type="icon" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     </head>
     <body>
         <header id="small-screen-header">
             <div id="margin-container">
-                <a href="index.html"
+                <a href="#"
                     ><img
                         id="header-logo"
                         src="images/paw-print.png"
@@ -34,9 +35,7 @@
             <div id="small-menu-dropdown">
                 <ul role="list" id="mini-list">
                     <li>
-                        <a href="index.html" class="text-slate-500-reg"
-                            >•HOME</a
-                        >
+                        <p class="current-page-drop-down">•HOME</p>
                     </li>
                     <li>
                         <a href="adoption-forms.html" class="text-slate-500-reg"
@@ -62,7 +61,8 @@
                             >•DONATE</a
                         >
                     </li>
-                    <a href="profile-page.html" class="text-slate-500-reg"
+                    <li>
+                        <a href="profile-page.html" class="text-slate-500-reg"
                             >-MY PROFILE-</a
                         >
                     </li>
@@ -74,7 +74,7 @@
             <div id="header-section-1">
                 <div id="header-content-top">
                     <div id="header-section-1-left">
-                        <a href="index.html"
+                        <a href="#"
                             ><img
                                 id="header-logo"
                                 src="images/paw-print.png"
@@ -98,7 +98,9 @@
             <div id="header-section-2">
                 <ul id="header-list" class="text-main-400">
                     <li>
-                        <a class="header-link text-main-400" href="index.html"
+                        <a
+                            class="header-link current-page text-main-400"
+                            href="#"
                             >Home</a
                         >
                     </li>
@@ -121,6 +123,7 @@
                             >Contact</a
                         >
                     </li>
+
                     <li>
                         <button
                             id="donate-button-header"
@@ -134,113 +137,103 @@
                 </ul>
             </div>
         </header>
-        <div id="center-content">
-            <section id="pet-id" aria-label="pet-photos">
-                <!-- <h1 class="text-main-title-500-reg">Animal Name</h1> -->
-    <!-- 
-                <div class="carousel">
-                    <!- - previous button - ->
-                    <button class="carousel-button carousel-button--left is-hidden">
-                        <img src="images/next.png" alt="previous" />
-                    </button>
 
-                    <!- - carousel - ->
-                    <div class="carousel__track-container">
-                        <ul class="carousel__track">
-                            <li class="carousel__slide current-slide" data-active>
-                                <img
-                                    class="carousel-image"
-                                    alt="pet-image-1"
-                                    src="images/animals/piccolo.jpg"
-                                />
-                            </li>
-                            <li class="carousel__slide">
-                                <img
-                                    class="carousel-image"
-                                    alt="pet-image-2"
-                                    src="images/animals/phoebe.jpg"
-                                />
-                            </li>
-                            <li class="carousel__slide">
-                                <img
-                                    class="carousel-image"
-                                    alt="pet-image-3"
-                                    src="images/animals/flick.jpg"
-                                />
-                            </li>
-                        </ul>
-                    </div>
+        <section id="adoption-form">
+            <div id="form-center" class="container">
+                <form id="regForm" action="/submitAnimal" method="post">
+                    <h3 class="form-title text-main-title-500-bold">
+                        Input Animal Form
+                    </h3>
 
-                    <!- - next button - ->
-                    <button class="carousel-button carousel-button--right">
-                        <img src="images/next.png" alt="next" />
-                    </button>
-                    <div class="carousel__nav">
-                        <button class="carousel__indicator current-slide"></button
-                        ><button class="carousel__indicator"></button
-                        ><button class="carousel__indicator"></button>
-                    </div>
-                </div>
-    -->
+                    <label for="animal-name" class="required"
+                        >Animal name:</label
+                    >
+                    <input
+                        id="animal-name"
+                        type="text"
+                        name="animal-name"
+                        autocomplete="off"
+                        required
+                    />
 
-        
+                    <label for="animal-image" class="required"
+                        >Insert image(s) of animal:</label
+                    >
+                    <input type="file" name="animal-image" />
+                    <input type="file" name="animal-image" />
+                    <input type="file" name="animal-image" />
 
-            
-            </section>
-            
-            <section id="pet-info">
-                <!-- <div id="text-pet-info">
-                    <div id="fav-buttons">
-                        <button
-                            onclick="ToggleHeart()"
-                            class="favorites-button"
-                            id="heart-btn1"
-                        >
-                            <img
-                                id="blank-heart-animal"
-                                src="images/heart.png"
-                            />
-                            <span>Favorite Animal Name</span>
-                        </button>
-                        <button onclick="ToggleHeart2()" class="favorites-button">
-                            <img
-                                id="blank-heart-species"
-                                src="images/heart.png"
-                            /><span>Favorite Species</span>
-                        </button>
-                    </div>
+                    <label for="status" class="required">Status:</label>
+                    <input
+                        id="status"
+                        type="text"
+                        name="status"
+                        autocomplete="off"
+                        required
+                    />
 
-                    <ul id="pet-details">
-                        <li class="text-main-bold-400">
-                            Status: Available for adoption
-                        </li>
-                        <li class="text-main-bold-400">Species: Tabby</li>
-                        <li class="text-main-bold-400">Rescue ID: 23-0037</li>
-                        <li class="text-main-bold-400">
-                            Current Age: 3 Months 7 Days (best estimate)
-                        </li>
-                    </ul>
+                    <label for="species" class="required">Species:</label>
+                    <input
+                        id="species"
+                        type="text"
+                        name="species"
+                        autocomplete="off"
+                        required
+                    />
 
-                    <h1 class="text-main-title-500-reg" id="about-title">About</h1>
-                    <p class="text-main-400" id="animal-descriptive-paragraph">
-                        This will be a short paragraph about each animal...This
-                        animal is so cute and sweet and needs a home. Please
-                        consider adopting me.
-                    </p>
-                </div> -->
-            
-            </section>
-        
+                    <label for="gender" class="required">Gender:</label>
+                    <input
+                        id="gender"
+                        type="text"
+                        name="gender"
+                        autocomplete="off"
+                        required
+                    />
 
-            <button
-                    id="back-to-animals"
-                    class="text-paper-400-bold"
-                    onclick="window.location.href='animals-available.html'"
-                    ,
-                >
-                    Back to Animals
-                </button>
-        </div>
+                    <label for="breed" class="required">Breed:</label>
+                    <input
+                        id="breed"
+                        type="text"
+                        name="breed"
+                        autocomplete="off"
+                        required
+                    />
+
+                    <label for="rescue-id" class="required">Rescue ID:</label>
+                    <input
+                        id="rescue-id"
+                        type="text"
+                        name="rescue-id"
+                        autocomplete="off"
+                        required
+                    />
+
+                    <label for="current-age" class="required"
+                        >Current-age:</label
+                    >
+                    <input
+                        id="current-age"
+                        type="text"
+                        name="current-age"
+                        autocomplete="off"
+                        required
+                    />
+
+                    <label for="attributes">Attributes:</label>
+                    <input
+                        id="attributes"
+                        type="text"
+                        name="attributes"
+                        autocomplete="off"
+                    />
+
+                    <label for="bio" class="required">About me:</label>
+                    <input id="bio" type="text" name="bio" autocomplete="off" />
+
+                    <button type="submit" value="Submit">Submit</button>
+                </form>
+            </div>
+        </section>
 
         <!-- back to top -->
         <a href="#" class="to-top"><i class="fas fa-chevron-up"></i></a>
